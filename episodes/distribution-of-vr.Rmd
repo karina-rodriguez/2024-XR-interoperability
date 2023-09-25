@@ -1,111 +1,68 @@
 ---
-title: 'Distribution of VR'
+title: 'Types of content in XR experiences'
 teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Introduction
-
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
-
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
-
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
+## Types of content in XR experiences / applications
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+Distinction is made between environments which incorporate different type of content,
+in particular:
 
-:::::::::::::::::::::::: solution 
+- Vectorised-3D environments, as in an interactive virtual environment 
+- Image-renderings, as in 360 images
 
-You can add a line with at least three colons and a `solution` tag.
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
+### Vectorised-3D environment
+These experiences are usually developed within a vector-formatted 3D environment,
+such as the full 3D scene (inc. objects in the scene),
+as well as the camera, and lighting information.
 
-## Figures
+It allows for a more immersive experience if a user can fully interact
+with this visually-rich environment.
 
-You can include figures generated from R Markdown:
+It also allows for interactivity as the environment reacts
+to the users' actions. 
 
-```{r pyramid, fig.alt = "pie chart illusion of a pyramid", fig.cap = "Sun arise each and every morning"}
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
-```
-Or you can use pandoc markdown for static figures with the following syntax:
+Resolution of the image usually depends on the rendering mechanism of
+such environments.
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+![Example of vectorised-3D environment showing a user in an interactive and immersive environment &copy; National Institute of Standards and Technology](https://upload.wikimedia.org/wikipedia/commons/7/76/Immersive_environment_-_3D.jpg){alt='Example of vectorised-3D environment.'}
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+### Immersive image-renders
+These environments are developed using 360 panoramas which record
+an environment from a central position with a view in every direction.
 
-## Math
+Users can rotate the camera view to select the direction to look at. Yet
+they cannot move within the environnment.
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
+These experiences can be easier/cheaper to produce an distribute as they only
+require a rendered photograph or video to be displayed.
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
+However, allowing for high-quality imagery or interactivity might incurr
+in a longer/more expensive development cycle. But also for an enhanced
+user experience.
 
-Cool, right?
+
+![Example of 360° panoramic image of the Thean Hou Temple &copy; Dennis Sylvester Hurd](https://upload.wikimedia.org/wikipedia/commons/6/66/360%C2%B0_Image_at_the_Thean_Hou_Temple_%2849496080737%29.jpg){alt='Example of 360° panoramic image.'}
+For high-quality resolution, cameras such as the [Insta360 Pro2](https://onlinemanual.insta360.com/pro2/en-us/basic/prepare/about), will produce an image of 7680 x 7680 (8K) pixles, and video of 7680 x 3840 pixels. These cameras can also support stereoscopic images.
+
+## Stereoscopic versus No-Stereoscopic Content
+Despite the modality of Distribution, content can be acessed via stereoscopic or non-stereoscopic mode.
+
+If the experience can be accessed in stereoscopic mode, then adequate hardware,
+such as a VR headset or stereoscopic glasses, willl be required by the user.
+This will impose additional requirements for the user in terms of hardware, and its
+capabilities to acess content.
+
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- XR experiences can involve 3D environments or 360 images
+- Distribution will depend on the modality, as well as whether the content is stereoscopic or not
+- The hardware that is available to users will depend on the type of content
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
