@@ -27,7 +27,7 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/karina-rodriguez/xr-interoperability'
+source: 'https://github.com/karina-rodriguez/2023-xr-interoperability'
 
 # Default branch of your lesson
 branch: 'main'
@@ -60,6 +60,15 @@ contact: 'team@carpentries.org'
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
+- distribution-of-vr.Rmd
+- immersive-vs-panoramic.Rmd
+- degrees-of-freedom.Rmd
+- distribution-3dof.Rmd
+- distribution-6dof.Rmd
+- publishing-interactive-xr.Rmd
+- xr-interoperability.Rmd
+- openvr.Rmd
+- webxr.Rmd
 
 # Information for Learners
 learners: 
