@@ -39,7 +39,7 @@ You can point out here to the links which can show the various links available.
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: What is an XR experience?
+## Challenge: What is an XR experience?
 
 Explore which of the following could be consider an XR experience?
 
@@ -65,46 +65,6 @@ as well as user-freedoms for moving within the environment.
 
 :::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 2: How are XR experiences made available to users?
-
-Explore how each of these experiences can be made available to users?
-
-Reflect on how the distrubution platform might impact (or not) the amount 
-of potential users.
-
-:::::::::::::::::::::::: solution 
-
-
-## Output
- 
-
-There are many different platforms for distributing XR experiences. 
-Here is a list of the most popular ones.
-
-- [Meta Quest](https://www.meta.com/en-gb/experiences/)
-- [Valve Steam](https://store.steampowered.com/)
-- [VR YouTube](https://vr.youtube.com/)
-- [Facebook 360](https://www.facebook.com/Facebook360/)
-
-Note that they distribute content both through a web browser and 
-through a device such as a phone or headset.
-
-Beside these platforms, XR experiences can be installed as apps
-on mobile phones through platforms such as Google and Apple apps:
-
-- [Apple App Store](https://apps.apple.com/)
-- [Windows App Store](https://apps.microsoft.com/store/apps)
-- [Google App Store](https://play.google.com/)
-
-In most of these cases, the potential users is dependent on the
-specific device they target.
-
-:::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 

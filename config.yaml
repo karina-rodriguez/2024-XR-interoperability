@@ -58,10 +58,10 @@ contact: 'team@carpentries.org'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - introduction.Rmd
-- distribution-of-vr.Rmd
 - immersive-vs-panoramic.Rmd
+- distribution-of-vr.Rmd
 - degrees-of-freedom.Rmd
 - distribution-3dof.Rmd
 - distribution-6dof.Rmd
@@ -71,13 +71,13 @@ episodes:
 - webxr.Rmd
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
