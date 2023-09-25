@@ -1,5 +1,5 @@
 ---
-title: 'introduction'
+title: 'Introduction'
 teaching: 10
 exercises: 2
 ---
@@ -7,14 +7,15 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What are the ways to distribute XR experiences?
-- What platforms are available for distributing XR expeirences on the web?
+- What platforms are available for distributing XR experiences on the web?
 - What needs to consider when publishing an XR experience?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Have an awarness for the multiple types of platforms which are available to publish 3D content.
+
+- Have an awareness for the multiple types of platforms which are available to publish 3D content.
 - Explain the difference between 3DOF and 6DOF XR experiences
 - Demonstrate how to include pieces of code, figures, and nested challenge blocks
 
@@ -22,57 +23,51 @@ exercises: 2
 
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
+This lecture covers topics related to the distribution of XR experiences or applications.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+It particularly focus on the availability of these experiences through various platforms and devices.
+
+It considers the types of platforms that are available in the domain.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+You can point out here to the links which can show the various links available.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you do it?
+## Challenge 1: What is an XR experience?
 
-What is the output of this command?
+Explore which of the following could be consider an XR experience?
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+Decide why this is the case?
+
+Reflect how will you make available such experience to a user?
+
+
+- 360 panoramas/video
+- Interactive larger-scale images
+- Outdoor 360 audio recording 
+- Immersive 3D-world
+- Interactive 3D model
+
 
 :::::::::::::::::::::::: solution 
 
 ## Output
  
-```output
-[1] "This new lesson looks good"
-```
+All of these examples could be considered an XR experience.
+Although all have different levels of interactivity, sensory
+input
+as well as user-freedoms for moving within the environment.
 
 :::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
 
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Figures
