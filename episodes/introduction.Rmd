@@ -6,13 +6,16 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+- What are the ways to distribute XR experiences?
+- What platforms are available for distributing XR expeirences on the web?
+- What needs to consider when publishing an XR experience?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
+- Have an awarness for the multiple types of platforms which are available to publish 3D content.
+- Explain the difference between 3DOF and 6DOF XR experiences
 - Demonstrate how to include pieces of code, figures, and nested challenge blocks
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
