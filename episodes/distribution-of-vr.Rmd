@@ -1,5 +1,5 @@
 ---
-title: 'Types of content in XR experiences'
+title: 'Distribution Platforms'
 teaching: 10
 exercises: 2
 ---

@@ -1,10 +1,8 @@
 ---
-title: 'Type of Content'
+title: 'Types of content in XR experiences / applications'
 teaching: 10
 exercises: 2
 ---
-
-## Types of content in XR experiences / applications
 
 Distinction is made between environments which incorporate different type of content,
 in particular:
@@ -13,7 +11,7 @@ in particular:
 - Image-renderings, as in 360 images
 
 
-### Vectorised-3D environment
+## Vectorised-3D environment
 These experiences are usually developed within a vector-formatted 3D environment,
 such as the full 3D scene (inc. objects in the scene),
 as well as the camera, and lighting information.
@@ -29,7 +27,7 @@ such environments.
 
 ![Example of vectorised-3D environment showing a user in an interactive and immersive environment &copy; National Institute of Standards and Technology](https://upload.wikimedia.org/wikipedia/commons/7/76/Immersive_environment_-_3D.jpg){alt='Example of vectorised-3D environment.'}
 
-### Immersive image-renders
+## Immersive image-renders
 These environments are developed using 360 panoramas which record
 an environment from a central position with a view in every direction.
 
