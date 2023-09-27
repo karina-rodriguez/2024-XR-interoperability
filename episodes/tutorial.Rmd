@@ -4,6 +4,21 @@ teaching: 10
 exercises: 2
 ---
 
+
+---
+
+**Aim:**
+
+This tutorial will allow you to create a basic locally hosted website which allows
+a user to visualise and interact with a 360&deg; image.
+
+**Requirements:**
+
+You will need basic awarness of how a webserver works, as well
+as basic knowledge of HTML and Javascript.
+
+---
+
 ## Create a basic web server image in Docker
 
 
@@ -186,3 +201,39 @@ var vrView = new VRView.Player('#vrview', {
 :::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+It is possible to add interactivity to the image by using **hotspots**.
+
+**Hotspots** are *graphic hyperlinks* in the visual environment which allow a user to
+click on to obtain further information.
+
+To add hotspots to the image, it is necessary to include additional code in the 
+myscript.js file.
+
+The coordinates, determined by pitch and yaw refering to movement around the x and y axes.
+They are with respect to spherical coordinates.
+
+The default center of view is at (0, 0).
+The pitch (rotation around X) range is [-90, 90] with positive values corresponding to up.
+The yaw (rotation around Y) range is [-180, 180] with positive values corresponding to the right.
+
+
+ ```Javascript
+  vrView.on('ready',function(){
+    vrView.addHotspot('cloud hotspot', {
+         pitch: 30, // In degrees. Up is positive.
+          yaw: 20, // In degrees. To the right is positive.
+          radius:   0.05, // Radius of the circular target in meters.
+          distance: 1, // Distance of target from camera in meters.
+    });
+  });
+  vrView.on('click', function(event) {
+  if (event.id == 'cloud hotspot') {
+    // Handle hotspot click.
+    window.alert("This is a cloud!");
+  }
+  });
+          
+```
+
+
