@@ -1,0 +1,188 @@
+---
+title: 'Tutorial'
+teaching: 10
+exercises: 2
+---
+
+## Create a basic web server image in Docker
+
+
+For this excercise, we will use Docker.
+
+To start we either search in Docker Hub
+
+![Search in Docker Hub for karinardz/my-own-apache2](/fig/dockerhub.png){alt='Download my-own-apache2.'}
+
+Or pull a docker image fromt the command line:
+
+```console
+foo@bar:~$ docker pull karinardz/my-own-apache2
+```
+
+Once you pull the image you should be able to see this in your docker list of images
+
+```console
+foo@bar:~$ docker image ls
+REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
+karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB
+```
+
+
+
+## Start the web server container
+
+To start the new server
+
+Either start the image in Docker Desktop. 
+
+
+![Start in DockerDesktop the image karinardz/my-own-apache2](/fig/start.png){alt='Start my-own-apache2.'}
+
+Please note to add your own container name, and add a port to run the webserver,
+for example, 8080 as shown in the image.
+
+Or start the container from the command line
+
+```console
+foo@bar:~$ docker run -dit --name my-own-webserver -p 8080:80 my-own-apache2
+```
+
+
+Once you pull the image you should be able to see this in your docker list of images
+
+```console
+foo@bar:~$ docker container ls
+CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS         PORTS                    NAMES
+ec432b277b4c   karinardz/my-own-apache2           "httpd-foreground"       9 seconds ago   Up 8 seconds   0.0.0.0:8080->80/tcp     my-own-webserver
+```
+
+
+## Run the website on a browser
+
+The container has a basic apache httpd web server installed.
+
+To test this, you can access on a web browser the following address:
+
+[http://localhost:8080](http://localhost:8080)
+
+This web server has been loaded with a basic html page, and some 
+javascript which uses the [VR View for the Web](https://developers.google.com/vr/develop/web/vrview-web).
+
+![Load localhost on webserver will visualise the 360 image.](/fig/localhost.png){alt='Local host with 360 image.'}
+
+## Modify the HTML/JavaScript code to add interaction
+
+
+Docker Desktop can be used to access the files which are used for the website.
+To access this, navigate to: Containers -> my-own-webserver 
+
+You should be able to access the interface with the various tabs:
+Logs, Inspect, Terminal, Files, Stats
+
+If you click on 'Files', you will be able to access all the filesystem in your container.
+Note this is only in memory, as it is not in your local filesystem.
+
+Using the interface, navigate to: /usr/local/apache2/htdocs
+
+![Access the HTML code for the web page.](/fig/editHTTP.png){alt='Edit HTML.'}
+
+To open index.html, double click on it.
+
+You will see the HTML code which renders the web page. In particular, there 
+DIV element which allows for the 360&deg; image to be render. 
+
+For more information in tags, see [HTML documentation](https://www.w3schools.com/tags/tag_html.asp).
+
+
+```HTML
+<html>
+    <head>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <!-- Include a script with code to add images and interactivity -->
+    <script src="myscript.js"></script> 
+
+    </head>
+    <body>
+    <!--  an HTML DIV tag -->
+    <div id='vrview'></div>
+    </body>
+    
+</html>
+```
+
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Challenge: Modify the HTML code
+
+Try adding some HTML element to the site, such as some text.
+
+
+:::::::::::::::::::::::: solution 
+
+## Code to add title
+ 
+ ```HTML
+    <h1>Welcome to my 360&deg; image</h1>
+```
+
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Most functionality takes place in myscript.js, so double click on it.
+
+To learn more about Javascript, access the [Javascript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+
+You will find the following code:
+
+ ```Javascript
+
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+
+  var vrView = new VRView.Player('#vrview', {
+    image: 'example360.jpg',
+    width: '100%',
+    height: '100%',
+    is_stereo: false
+  });
+}
+```
+
+This takes a 360 image and renders it with a width and height of 100%.
+
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+## Challenge: Modify the Javascript code
+
+Try modifying the width and height of the image.
+
+You can also add a URL to another 360&deg; image on the web, e.g.
+[https://commons.wikimedia.org/wiki/File:360%C2%B0_Hochalppass_Panorama.jpg](https://commons.wikimedia.org/wiki/File:360%C2%B0_Hochalppass_Panorama.jpg)
+
+Save the file and reload the page on the browser.
+
+:::::::::::::::::::::::: solution 
+
+## Code to add title
+ 
+ ```Javascript
+var vrView = new VRView.Player('#vrview', {
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/360%C2%B0_Hochalppass_Panorama.jpg',
+    width: '100%',
+    height: '100%',
+    is_stereo: false
+  });
+  
+```
+
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

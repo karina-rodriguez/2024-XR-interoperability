@@ -64,7 +64,7 @@ episodes:
 - degrees-of-freedom.Rmd
 - distribution-of-vr.Rmd
 - distribution-3dof.Rmd
-- publishing-interactive-xr.Rmd
+- tutorial.Rmd
 
 # Information for Learners
 learners:

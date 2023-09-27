@@ -63,7 +63,14 @@ The container has a basic apache httpd web server installed.
 
 To test this, you can access on a web browser the following address:
 
-http://localhost:8080
+[http://localhost:8080](http://localhost:8080)
+
+This web server has been loaded with a basic html page, and some 
+javascript which uses the [VR View for the Web](https://developers.google.com/vr/develop/web/vrview-web).
+
+![Load localhost on webserver will visualise the 360 image.](/fig/localhost.png){alt='Local host with 360 image.'}
+
+## Modify the HTML/JavaScript code to add interaction
 
 
 Docker Desktop can be used to access the files which are used for the website.
@@ -77,4 +84,8 @@ Note this is only in memory, as it is not in your local filesystem.
 
 Using the interface, navigate to: /usr/local/apache2/htdocs
 
+![Access the HTML code for the web page.](/fig/editHTTP.png){alt='Edit HTML.'}
 
+To open index.html, double click on it.
+
+You will see the HTML code which renders the web page.
