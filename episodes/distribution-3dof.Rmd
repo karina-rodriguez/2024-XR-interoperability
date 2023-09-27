@@ -1,111 +1,54 @@
 ---
-title: 'Distribution 3DOF'
+title: 'Distribution 3 DoF Experiences'
 teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- How do you write a lesson using R Markdown and `{sandpaper}`?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Introduction
-
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
-
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
-
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+## Examples of 3DoF Experiences
 
-:::::::::::::::::::::::: solution 
+Some websites allow for accessing 360 immersive image-renders 
+with suitable interfaces for the user to move using 3DoF. 
+When they don't have access to a device,
+such as a mobile phone,
+users can use the mouse to manipulate the virtual camera.
 
-You can add a line with at least three colons and a `solution` tag.
+This type of experience allows for the wider access.
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
+See the following examples:
+- [360 cities](https://www.360cities.net/)
+- [Arts and Culture 360 videos](https://artsandculture.google.com/project/360-videos)
 
-## Figures
+Beside delivering 3DoF content websites, it is also possible
+to develop applications to be installed
+on a device which allow interaction with this type of content.
 
-You can include figures generated from R Markdown:
+## Developing 3DoF XR experiences on the web
 
-```{r pyramid, fig.alt = "pie chart illusion of a pyramid", fig.cap = "Sun arise each and every morning"}
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
-```
-Or you can use pandoc markdown for static figures with the following syntax:
+For developing this type of experience,
+the best option is to use an existing platform, or
+your own code using HTML + Javascript libraries.
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+This type of viewer is called a photosphere viewer
+as the image is mapped as a texture on a sphere.
+Most platforms will only provide
+the basic functionality to move around.
+Hence, custom-made code is required to access 
+more complex/interactive functionality.
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
 
-## Math
+Existing platforms include:
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
+- [VR YouTube](https://vr.youtube.com/)
+- [Facebook 360](https://www.facebook.com/Facebook360/)
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
+You can also include your own viewer using existing libraries, for example:
 
-Cool, right?
+- [Google VR view](https://developers.google.com/vr/develop/web/vrview-web)
 
-::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+These allow for rendering an image or a video on the web.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+
 

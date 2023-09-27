@@ -11,7 +11,7 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Platforms for distribution'
+title: 'Distribution Platforms for XR Experiences'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2023-09-25'
@@ -64,11 +64,7 @@ episodes:
 - degrees-of-freedom.Rmd
 - distribution-of-vr.Rmd
 - distribution-3dof.Rmd
-- distribution-6dof.Rmd
 - publishing-interactive-xr.Rmd
-- xr-interoperability.Rmd
-- webxr.Rmd
-- openvr.Rmd
 
 # Information for Learners
 learners:

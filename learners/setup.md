@@ -20,12 +20,26 @@ Download the [data zip file](https://example.com/FIXME) and unzip it to your Des
 
 ### Details
 
-Setup for different systems can be presented in dropdown menus via a `solution`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+During the lesson you will need to deploy a basic
+web server. This will allow you to test some basic HTML + Javascript code.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+In addition, you can make use of some datasets of your own, including
+360 images or 360 video. If you don't have any available, please use the Data
+Sets provided with this lesson.
+
+To recap, you will need access to either:
+
+1. Have access to a web server, e.g. [Brighton Domains](https://brighton.domains)
+2. Have access to [Docker](https://www.docker.com/) to deploy a simple web server in your own PC/laptop.
+
+For more information how to use Docker, 
+please refer to the lesson for the
+[Docker introduction](https://carpentries-incubator.github.io/docker-introduction/).
+In particular, it would be good you complete the following:
+
+- How do I know Docker is installed and running?
+- How do I interact with Docker?
+::::::::::::::::::::::::::::::::::::::: 
 
 :::::::::::::::: solution
 

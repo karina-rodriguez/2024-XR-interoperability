@@ -1,111 +1,71 @@
 ---
-title: 'Distribution 6DOF'
+title: 'Tutorial'
 teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+## Create a basic web server image in Docker
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+For this excercise, we will use Docker.
 
-::::::::::::::::::::::::::::::::::::: objectives
+To start we either search in Docker Hub
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+![Search in Docker Hub for karinardz/my-own-apache2](fig/dockerhub.png){alt='Download my-own-apache2.'}
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+Or pull a docker image fromt the command line:
 
-## Introduction
-
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
-
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
-
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
+```console
+foo@bar:~$ docker pull karinardz/my-own-apache2
 ```
 
-:::::::::::::::::::::::: solution 
+Once you pull the image you should be able to see this in your docker list of images
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
+```console
+foo@bar:~$ docker image ls
+REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
+karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB
 ```
 
-:::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+## Start the web server container
 
-:::::::::::::::::::::::: solution 
+To start the new server
 
-You can add a line with at least three colons and a `solution` tag.
+Either start the image in Docker Desktop. 
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Figures
+![Start in DockerDesktop the image karinardz/my-own-apache2](fig/start.png){alt='Start my-own-apache2.'}
 
-You can include figures generated from R Markdown:
+Please note to add your own container name, and add a port to run the webserver,
+for example, 8080 as shown in the image.
 
-```{r pyramid, fig.alt = "pie chart illusion of a pyramid", fig.cap = "Sun arise each and every morning"}
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
+Or start the container from the command line
+
+```console
+foo@bar:~$ docker run -dit --name my-own-webserver -p 8080:80 my-own-apache2
 ```
-Or you can use pandoc markdown for static figures with the following syntax:
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+Once you pull the image you should be able to see this in your docker list of images
 
-## Math
+```console
+foo@bar:~$ docker container ls
+CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS         PORTS                    NAMES
+ec432b277b4c   karinardz/my-own-apache2           "httpd-foreground"       9 seconds ago   Up 8 seconds   0.0.0.0:8080->80/tcp     my-own-webserver
+```
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
+## Run the website on a browser
 
-Cool, right?
+The container has a basic apache httpd web server installed.
 
-::::::::::::::::::::::::::::::::::::: keypoints 
+To test this, you can access on a web browser the following address:
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+http://localhost:8080
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+
+To access the files which create this website, it is possible to access this from
+Docker Desktop by navigating to 
 
