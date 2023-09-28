@@ -22,11 +22,11 @@ as basic knowledge of HTML and Javascript.
 ## Create a basic web server image in Docker
 
 
-For this excercise, we will use Docker.
+For this exercise, we will use Docker.
 
 To start we either search in Docker Hub
 
-![Search in Docker Hub for karinardz/my-own-apache2](/fig/dockerhub.png){alt='Download my-own-apache2.'}
+![Search in Docker Hub for karinardz/my-own-apache2](fig/dockerhub.png){alt='Download my-own-apache2.'}
 
 Or pull a docker image fromt the command line:
 
@@ -51,7 +51,7 @@ To start the new server
 Either start the image in Docker Desktop. 
 
 
-![Start in DockerDesktop the image karinardz/my-own-apache2](/fig/start.png){alt='Start my-own-apache2.'}
+![Start in DockerDesktop the image karinardz/my-own-apache2](fig/start.png){alt='Start my-own-apache2.'}
 
 Please note to add your own container name, and add a port to run the webserver,
 for example, 8080 as shown in the image.
@@ -83,7 +83,7 @@ To test this, you can access on a web browser the following address:
 This web server has been loaded with a basic html page, and some 
 javascript which uses the [VR View for the Web](https://developers.google.com/vr/develop/web/vrview-web).
 
-![Load localhost on webserver will visualise the 360 image.](/fig/localhost.png){alt='Local host with 360 image.'}
+![Load localhost on webserver will visualise the 360 image.](fig/localhost.png){alt='Local host with 360 image.'}
 
 ## Modify the HTML/JavaScript code to add interaction
 
@@ -99,7 +99,7 @@ Note this is only in memory, as it is not in your local filesystem.
 
 Using the interface, navigate to: /usr/local/apache2/htdocs
 
-![Access the HTML code for the web page.](/fig/editHTTP.png){alt='Edit HTML.'}
+![Access the HTML code for the web page.](fig/editHTTP.png){alt='Edit HTML.'}
 
 To open index.html, double click on it.
 
