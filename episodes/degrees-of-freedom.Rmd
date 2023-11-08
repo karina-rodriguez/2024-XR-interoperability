@@ -14,7 +14,6 @@ We normally distinguish between 3 or 6 degrees of freedom
 when describing XR experiences. See below for further information about each.
 
 
-
 ## 3 Degress of Freedom (3DoF)
 In some cases, as user is restricted mostly to move their head to 
 control where the camera is looking at within the environment. 
