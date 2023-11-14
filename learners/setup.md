@@ -10,7 +10,6 @@ FIXME: place any data you want learners to use in `episodes/data` and then use
 
 ## Software Setup
 
-::::::::::::::::::::::::::::::::::::::: discussion
 
 ### Details
 
