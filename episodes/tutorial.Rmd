@@ -22,8 +22,14 @@ as basic knowledge of HTML and Javascript.
 ## Create a basic web server image in Docker
 
 
-For this exercise, we will use Docker.
+For this exercise, you can either use:
 
+- web server in [brighton.domains](https://brighton.domains/)
+- Docker container with a web server.
+
+### Using brighton.domains
+
+### Using Docker
 To start we either search in Docker Hub
 
 ![Search in Docker Hub for karinardz/my-own-apache2](fig/dockerhub.png){alt='Download my-own-apache2.'}
@@ -41,7 +47,6 @@ foo@bar:~$ docker image ls
 REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
 karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB
 ```
-
 
 
 ## Start the web server container
@@ -98,6 +103,13 @@ If you click on 'Files', you will be able to access all the filesystem in your c
 Note this is only in memory, as it is not in your local filesystem.
 
 Using the interface, navigate to: /usr/local/apache2/htdocs
+
+### Edit webpage and Javascript
+
+Whatever path you used for the web server,
+you will need to create an index.html and a script.js
+
+See below for more details.
 
 ![Access the HTML code for the web page.](fig/editHTTP.png){alt='Edit HTML.'}
 
