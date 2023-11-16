@@ -29,6 +29,13 @@ For this exercise, you can either use:
 
 ### Using brighton.domains
 
+
+Access the server to create a new
+subdomain along with an
+index.html which displays a basic hello world.
+
+
+
 ### Using Docker
 To start we either search in Docker Hub
 
