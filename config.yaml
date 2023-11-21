@@ -62,9 +62,10 @@ episodes:
 - introduction.Rmd
 - immersive-vs-panoramic.Rmd
 - degrees-of-freedom.Rmd
-- distribution-of-vr.Rmd
 - distribution-3dof.Rmd
 - tutorial.Rmd
+- distribution-of-vr.Rmd
+- publishing-interactive-xr.Rmd
 
 # Information for Learners
 learners:

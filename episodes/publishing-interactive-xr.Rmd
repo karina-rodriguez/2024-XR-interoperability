@@ -1,91 +1,94 @@
 ---
-title: 'Tutorial'
+title: 'Distribution 6 DOF experiences'
 teaching: 10
 exercises: 2
 ---
 
-## Create a basic web server image in Docker
 
 
-For this excercise, we will use Docker.
+::::::: challenge
 
-To start we either search in Docker Hub
+Challenge: Interoperability
 
-![Search in Docker Hub for karinardz/my-own-apache2](/fig/dockerhub.png){alt='Download my-own-apache2.'}
+What are the challenges for achieving  in Virtual Reality applications?
 
-Or pull a docker image fromt the command line:
+::::::: solution
 
-```console
-foo@bar:~$ docker pull karinardz/my-own-apache2
-```
+::::::: 
 
-Once you pull the image you should be able to see this in your docker list of images
+## VR Interoperability
 
-```console
-foo@bar:~$ docker image ls
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB
-```
+- Users want the flexibility to access content across devices.
+- Less hassle and expenses.
+- For content creators and distributors, 
+it means easier and more cost-effective production and distribution.
+- More opportunities for ads and promotion.
 
 
+## OpenXR
 
-## Start the web server container
+- Developed by Khronos consortium, developer of OpenGL and OpenGL ES.
+- Open standard for access to XR (AR/VR) platforms and devices.
+- Aim to solve AR/VR fragmentation.
 
-To start the new server
+## WebXR 
 
-Either start the image in Docker Desktop. 
-
-
-![Start in DockerDesktop the image karinardz/my-own-apache2](/fig/start.png){alt='Start my-own-apache2.'}
-
-Please note to add your own container name, and add a port to run the webserver,
-for example, 8080 as shown in the image.
-
-Or start the container from the command line
-
-```console
-foo@bar:~$ docker run -dit --name my-own-webserver -p 8080:80 my-own-apache2
-```
+[![IMAGE ALT TEXT](https://i.ytimg.com/vi/wPfODr2e5Xw/maxresdefault.jpg)](https://www.youtube.com/watch?app=desktop&v=wPfODr2e5Xw "Chrome Dev Viewer")
 
 
-Once you pull the image you should be able to see this in your docker list of images
+The WebXR Device API allow developers to read information, such as
+pose information from headset and controllers, and 
+access hardware display 
+capabilities commonly associated with Virtual Reality (VR) 
+and Augmented Reality (AR) devices. 
 
-```console
-foo@bar:~$ docker container ls
-CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS         PORTS                    NAMES
-ec432b277b4c   karinardz/my-own-apache2           "httpd-foreground"       9 seconds ago   Up 8 seconds   0.0.0.0:8080->80/tcp     my-own-webserver
-```
+It allows you develop and host VR and AR experiences on the web.
 
+It allows to:
 
-## Run the website on a browser
+- Driven by the W3C group
+- Manages the output/input of devices and controllers.
+- Render the 3D scene to the chosen device at the appropriate frame rate.
+- Allows for persistency (ability to keep persistent link to 3D worlds).
 
-The container has a basic apache httpd web server installed.
+See more information at: [WebXR webpage](https://immersiveweb.dev/)
 
-To test this, you can access on a web browser the following address:
-
-[http://localhost:8080](http://localhost:8080)
-
-This web server has been loaded with a basic html page, and some 
-javascript which uses the [VR View for the Web](https://developers.google.com/vr/develop/web/vrview-web).
-
-![Load localhost on webserver will visualise the 360 image.](/fig/localhost.png){alt='Local host with 360 image.'}
-
-## Modify the HTML/JavaScript code to add interaction
+Examples with code: [https://immersive-web.github.io/webxr-samples/](https://immersive-web.github.io/webxr-samples/)
 
 
-Docker Desktop can be used to access the files which are used for the website.
-To access this, navigate to: Containers -> my-own-webserver 
+### XR Viewer
 
-You should be able to access the interface with the various tabs:
-Logs, Inspect, Terminal, Files, Stats
+[![IMAGE ALT TEXT](https://i.ytimg.com/vi/AXiS2ngAv2w/maxresdefault.jpg)](https://www.youtube.com/watch?v=AXiS2ngAv2w "XR Viewer")
 
-If you click on 'Files', you will be able to access all the filesystem in your container.
-Note this is only in memory, as it is not in your local filesystem.
+To see some of this examples,
+you will need to install [Mozilla XR Viewer](https://labs.mozilla.org/projects/webxr-viewer/)
 
-Using the interface, navigate to: /usr/local/apache2/htdocs
 
-![Access the HTML code for the web page.](/fig/editHTTP.png){alt='Edit HTML.'}
+## Mozilla Hubs
 
-To open index.html, double click on it.
+This is a VR platform over the web, it is collaborative
+and allows to create your own content.
 
-You will see the HTML code which renders the web page.
+See webpage at: [https://hubs.mozilla.com/](https://hubs.mozilla.com/)
+
+To build 3D content: [https://hubs.mozilla.com/spoke]: https://hubs.mozilla.com/spoke
+
+
+## Google model viewer
+
+Allows to easily display interactive 3D models on the web & in AR.
+
+Model Viewer: [https://modelviewer.dev/examples/loading/index.html](https://modelviewer.dev/examples/loading/index.html)
+Editor: [https://modelviewer.dev/editor/](https://modelviewer.dev/editor/)
+
+
+## Three.JS
+
+Most popular 3D library to make
+3D content on a webpage.
+
+It allows to use the OpenGL pipeline.
+
+ThreeJS: [https://threejs.org/](https://threejs.org/)
+Fundamentals: [https://threejs.org/manual/#en/fundamentals](https://threejs.org/manual/#en/fundamentals)
+

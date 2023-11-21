@@ -1,60 +1,63 @@
 ---
-title: 'Distribution Platforms'
+title: 'Distribution 6 DoF Experiences'
 teaching: 10
 exercises: 2
 ---
 
 
+Depending on which devices you are supporting, you can
+publishing content in an application store of each device:
+
+- [Steam](https://store.steampowered.com/), for headsets
+including HTC Vive or Vive Pro, HP Reverb G2
+- [Meta Quest](https://www.meta.com/en-gb/experiences/), for headsets
+including Oculus Rift, Oculus Go, Oculus Quest,  Samsung Gear VR
+- [Microsoft Store](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)
+
+## How to publish?
+
+To publish in one of these stores you will need to 
+enroll to publish in the online store.
+
+For example, [Steamworks](https://partner.steamgames.com/)
+offers tools and services for publishing VR. Steamworks offers
+to become a partner, including as a:
+
+- Game Developer or Publisher
+- PC Café Program, including sites such as hospitals, universities, or libraries.	
+
+For Oculus, there are two paths, publishing in the OculusStore has
+an extensive approval process. This includes
+doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/).
 
 
-::::::::::::::::::::::::::::::::::::: challenge 
+The [Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
+alternative path.
 
-## Challenge: Distributing XR experiences
+To distribute, you can share your app via a URL, providing
+direct access to the description page,
+and an option to purchase or install the app. 
 
-Explore how various types of experiences can be 
-distributed to reach a wide number of users.
-
-Reflect on how the distrubution platform might impact (or not) the amount 
-of potential users.
-
-:::::::::::::::::::::::: solution 
+Consider joining, if you are planning to make
+available your game after development.
 
 
-## Output
- 
+## Recomendations for publishing interactive VR
 
-There are many different platforms for distributing XR experiences. 
-Here is a list of the most popular ones.
+VR applications
+usually need to meet strict guidelines to be considered for distribution.
 
-- [Meta Quest](https://www.meta.com/en-gb/experiences/)
-- [Valve Steam](https://store.steampowered.com/)
-- [VR YouTube](https://vr.youtube.com/)
-- [Facebook 360](https://www.facebook.com/Facebook360/)
+Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
 
-Note that they distribute content both through a web browser and 
-through a device such as a phone or headset.
+Here are some guidelines:
 
-Beside these platforms, XR experiences can be installed as apps
-on mobile phones through platforms such as Google and Apple apps:
-
-- [Apple App Store](https://apps.apple.com/)
-- [Windows App Store](https://apps.microsoft.com/store/apps)
-- [Google App Store](https://play.google.com/)
-
-In most of these cases, the potential users is dependent on the
-specific device they target.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- Limit the number of triangles or vertices.
+- Less than 1-2 million per frame.
+- Don't always strive for photorealism, concentrate on the overall VR experience.
+- Use as few textures as possible.
+- Techniques such as texture compression can minimize texture bandwidth consumption.
+- Optimize your script which handles the logic of the experience.
 
 
-::::::::::::::::::::::::::::::::::::: keypoints 
 
-- XR experiences can involve 3D environments or 360 images
-- Distribution will depend on the modality, as well as whether the content 
-is stereoscopic or not.
-- The hardware that is available to users will have an impact 
-on the functionality which can be accessed.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
