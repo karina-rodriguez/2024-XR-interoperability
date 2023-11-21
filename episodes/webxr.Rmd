@@ -1,111 +1,107 @@
 ---
-title: 'WebXR'
+title: 'WebXR Tutorial'
 teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+This tutorial will allow you 
+to experience the implementation of 3D environments 
+on web interfaces by using WebGL. 
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+WebGL (Web Graphics Library) is a JavaScript API 
+for rendering interactive 2D and 3D graphics within 
+any compatible web browser without the use of plug-ins.
+WebGL is fully integrated with other web standards, allowing 
+GPU-accelerated usage of physics and image processing and 
+effects as part of the web page canvas. It uses the HTML5 canvas element. 
+You can use Three.JS (https://threejs.org/) or AFrame (https://aframe.io/) 
+for your application, although we'll revise here the way to 
+use Three.JS with Node.JS technology.
 
-::::::::::::::::::::::::::::::::::::: objectives
+Introduction
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+In this tutorial, we will test all the infrastructure required to implement 3D environments, including support for Virtual Reality (VR), on the web. It is meant to help you implement an example from THREE.JS.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+Exercise 1. Create a website
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
+Using https://brighton.domains/ create a folder on a subdomain, such as vrtest.yourname.brighton.domains. Through this, you will be able to test your own VR example, such as mine: https://vrtest.kre.brighton.domains
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+For this, you will need to:
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+1. Create a subdomain, which will allow you to specify a folder where you can upload your HTML files
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+Exercise 2. Download a BoilerPlate Three.JS implementation using Node.JS
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: challenge 
+It is best to start using an existing boiler plate code which has been configured for Node.JS to understand how it works and modify according to your needs, for example:
 
-## Challenge 1: Can you do it?
+GitHub - Sean-Bradley/Threejs-Boilerplate: A Threejs Boilerplate to aid in quick prototyping
+A Threejs Boilerplate to aid in quick prototyping. Contribute to Sean-Bradley/Threejs-Boilerplate development by creating an account on GitHub.
+GitHub
 
-What is the output of this command?
+So, create folder in Visual Studio Code and checkout from the github repository.
 
-```r
-paste("This", "new", "lesson", "looks", "good")
+Once you download the code, you can use npm to install and start:
+
+
+
+$ cd Threejs-Boilerplate
+
+$ npm install
+
+$ npm start
+
+This will run the Node.JS application and you can see the site by opening your browser and going to: http://127.0.0.1:3000
+
+You should see the default example:
+
+Exercise 3. Modify your code to run a VR example
+
+Using the VR examples in Three.JS: https://threejs.org/examples/ find a VR example which you want to work with, such as:
+
+https://threejs.org/examples/?q=vr#webxr_vr_cubes and look at the code: https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html
+
+You can copy the code within the <script> tag and include it in your client.js file. When running the example using $npm start you should see the new example running:
+
+
+Exercise 4. Examine the code
+
+Examine the code and make any modification you want to implement before deploying on the server. This can include changing the type of geometry, the number or the material you use:
+
+
+
+``` javascript
+
+  const geometry  =  new   THREE . BoxGeometry (  0.15 ,  0.15 ,  0.15  );
+
+
+  for  (  let   i  =  0 ;  i  <  200 ;  i  ++ ) {
+
+
+  const   object  =  new   THREE . Mesh (  geometry ,  new   THREE . MeshLambertMaterial ( {  color :   Math . random () *  0xffffff  } ) );
+
+
 ```
 
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
 
-:::::::::::::::::::::::: solution 
+Excercise 5. Upload your code to the webserver
 
-You can add a line with at least three colons and a `solution` tag.
+To deploy your code, you will need to copy/paste your code to the brighton.domains server. For this, you can use scp on the command line so that the content is copied recursively.
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Figures
 
-You can include figures generated from R Markdown:
 
-```{r pyramid, fig.alt = "pie chart illusion of a pyramid", fig.cap = "Sun arise each and every morning"}
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
-```
-Or you can use pandoc markdown for static figures with the following syntax:
+Now, in the brighton.domains dashboard look for the Node.JS functionality and create a new application with the content  on the folder.
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
 
-## Math
+ 
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
+After the application starts, you should be able to test it using a cardboard VR or headset through the http address.
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
