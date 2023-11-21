@@ -8,7 +8,7 @@ exercises: 2
 
 ::::::: challenge
 
-Challenge: Interoperability
+## Challenge: Interoperability
 
 What are the challenges for achieving  in Virtual Reality applications?
 

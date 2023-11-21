@@ -5,19 +5,28 @@ exercises: 2
 ---
 
 
+
 Depending on which devices you are supporting, you can
 publishing content in an application store of each device:
+
+![Steam Logo &copy; Steam, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg){alt="steam logo" width=60%}
 
 - [Steam](https://store.steampowered.com/), for headsets
 including HTC Vive or Vive Pro, HP Reverb G2
 - [Meta Quest](https://www.meta.com/en-gb/experiences/), for headsets
 including Oculus Rift, Oculus Go, Oculus Quest,  Samsung Gear VR
-- [Microsoft Store](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)
+- [Microsoft Store](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens),
+for headsets such as HP Reverb G2 VR Headset and Hololens.
 
 ## How to publish?
 
+![&copy; GithHub (MIT <http://opensource.org/licenses/mit-license.php> or OFL <http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web>), via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/b/bb/Octicons-cloud-upload.svg){alt="upload" width=60%}
+
 To publish in one of these stores you will need to 
 enroll to publish in the online store.
+
+![SteamWorks &Steam;](https://partner.steamgames.com/public/images/home/background.jpg){width=100%}
+
 
 For example, [Steamworks](https://partner.steamgames.com/)
 offers tools and services for publishing VR. Steamworks offers
@@ -31,6 +40,7 @@ an extensive approval process. This includes
 doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/).
 
 
+
 The [Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
 alternative path.
 
@@ -38,8 +48,11 @@ To distribute, you can share your app via a URL, providing
 direct access to the description page,
 and an option to purchase or install the app. 
 
+
 Consider joining, if you are planning to make
 available your game after development.
+
+
 
 
 ## Recomendations for publishing interactive VR
@@ -48,6 +61,17 @@ VR applications
 usually need to meet strict guidelines to be considered for distribution.
 
 Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
+
+:::::: challenge
+
+## Challenge: Test plan
+
+Look at the test plan and reflect on how you could test 
+this within your application.
+
+Consider such type of testing for your coursework.
+
+:::::: 
 
 Here are some guidelines:
 
