@@ -9,7 +9,7 @@ exercises: 2
 Depending on which devices you are supporting, you can
 publishing content in an application store of each device:
 
-![Steam Logo &copy; Steam, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg){alt="steam logo" width=60%}
+![Steam Logo &copy; Steam, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg){alt="steam logo" width=30%}
 
 - [Steam](https://store.steampowered.com/), for headsets
 including HTC Vive or Vive Pro, HP Reverb G2
@@ -20,26 +20,32 @@ for headsets such as HP Reverb G2 VR Headset and Hololens.
 
 ## How to publish?
 
-![&copy; GithHub (MIT <http://opensource.org/licenses/mit-license.php> or OFL <http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web>), via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/b/bb/Octicons-cloud-upload.svg){alt="upload" width=60%}
+![&copy; GithHub (MIT <http://opensource.org/licenses/mit-license.php> or OFL <http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web>), via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/b/bb/Octicons-cloud-upload.svg){alt="upload" width=30%}
 
 To publish in one of these stores you will need to 
 enroll to publish in the online store.
 
-![SteamWorks &Steam;](https://partner.steamgames.com/public/images/home/background.jpg){width=100%}
+![SteamWorks &Steam;](https://partner.steamgames.com/public/images/home/background.jpg){width=60%}
 
 
-For example, [Steamworks](https://partner.steamgames.com/)
+### Steam
+
+[Steamworks](https://partner.steamgames.com/)
 offers tools and services for publishing VR. Steamworks offers
 to become a partner, including as a:
 
 - Game Developer or Publisher
 - PC Café Program, including sites such as hospitals, universities, or libraries.	
 
-For Oculus, there are two paths, publishing in the OculusStore has
-an extensive approval process. This includes
+### Meta Quest
+For Meta Quest, there are two paths: 
+
+#### Publishing in the OculusStore 
+
+This has an extensive approval process. This includes
 doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/).
 
-
+#### Publishing in the AppLab or SideQuest 
 
 The [Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
 alternative path.
@@ -48,6 +54,10 @@ To distribute, you can share your app via a URL, providing
 direct access to the description page,
 and an option to purchase or install the app. 
 
+[SideQuest](https://sidequestvr.com/apps/applab/) is
+another platform for publishing apps for the Oculus Quest.
+
+### Meta Quest
 
 Consider joining, if you are planning to make
 available your game after development.
@@ -69,7 +79,7 @@ scene content including:
 
 You will need to be aware of the
 computing requirements to run this at appropiate framerates in
-teh user's computer.
+the user's computer.
 
 
 [![IMAGE ALT TEXT](https://i.ytimg.com/vi/NSzje6I3BZA/maxresdefault.jpg)](https://www.youtube.com/watch?v=NSzje6I3BZA "Framerate")
