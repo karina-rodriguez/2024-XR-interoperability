@@ -29,7 +29,7 @@ enroll to publish in the online store.
 ![SteamWorks &copy; Steam](https://partner.steamgames.com/public/images/home/background.jpg){width=60%}
 
 
-### Steam
+### Publish in Steam
 
 [Steamworks](https://partner.steamgames.com/)
 offers tools and services for publishing VR. Steamworks offers
@@ -38,17 +38,15 @@ to become a partner, including as a:
 - Game Developer or Publisher
 - PC Café Program, including sites such as hospitals, universities, or libraries.	
 
-### Meta Quest
+### Publish in Meta Quest
 For Meta Quest, there are two paths: 
 
-#### Publishing in the OculusStore 
-
-This has an extensive approval process. This includes
+1. OculusStore: this has an extensive approval process. This includes
 doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/).
 
-#### Publishing in the AppLab or SideQuest 
+2. AppLab or SideQuest:
 
-The [Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
+[Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
 alternative path.
 
 To distribute, you can share your app via a URL, providing
@@ -58,17 +56,13 @@ and an option to purchase or install the app.
 [SideQuest](https://sidequestvr.com/apps/applab/) is
 another platform for publishing apps for the Oculus Quest.
 
-### Meta Quest
-
 Consider joining, if you are planning to make
 available your game after development.
 
-### VIVE
+### Publish in VIVE
 
-
-[VIVE Developers](https://developer.vive.com/eu/)
-[VIVE Developers Console](https://developer.viveport.com/console)
-
+- [VIVE Developers](https://developer.vive.com/eu/)
+- [VIVE Developers Console](https://developer.viveport.com/console)
 
 In all of these systems you will need to register 
 and maybe pay a fee in order to publish.
