@@ -17,6 +17,7 @@ including HTC Vive or Vive Pro, HP Reverb G2
 including Oculus Rift, Oculus Go, Oculus Quest,  Samsung Gear VR
 - [Microsoft Store](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens),
 for headsets such as HP Reverb G2 VR Headset and Hololens.
+- [VIVEPORT](https://www.viveport.com/), supports all major headsets - including Meta Quest (via Meta Quest Link)
 
 ## How to publish?
 
@@ -25,7 +26,7 @@ for headsets such as HP Reverb G2 VR Headset and Hololens.
 To publish in one of these stores you will need to 
 enroll to publish in the online store.
 
-![SteamWorks &Steam;](https://partner.steamgames.com/public/images/home/background.jpg){width=60%}
+![SteamWorks &copy; Steam](https://partner.steamgames.com/public/images/home/background.jpg){width=60%}
 
 
 ### Steam
@@ -62,7 +63,15 @@ another platform for publishing apps for the Oculus Quest.
 Consider joining, if you are planning to make
 available your game after development.
 
+### VIVE
 
+
+[VIVE Developers](https://developer.vive.com/eu/)
+[VIVE Developers Console](https://developer.viveport.com/console)
+
+
+In all of these systems you will need to register 
+and maybe pay a fee in order to publish.
 
 ## Interactive Systsem
 
@@ -86,17 +95,20 @@ the user's computer.
 
 ## Recomendations for publishing interactive VR
 
-VR applications
-usually need to meet strict guidelines to be considered for distribution.
-
-Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
 
 :::::: challenge
 
 ## Challenge: Test plan
 
+VR applications
+usually need to meet strict guidelines to be considered for distribution.
+
+
 Look at the test plan and reflect on how you could test 
 this within your application.
+
+Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
+
 
 Consider such type of testing for your coursework.
 
