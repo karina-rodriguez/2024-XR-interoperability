@@ -64,8 +64,11 @@ available your game after development.
 - [VIVE Developers](https://developer.vive.com/eu/)
 - [VIVE Developers Console](https://developer.viveport.com/console)
 
+The guidelines for publishing in VIVE are as follows:
+[https://developer.vive.com/resources/viveport/store-guide/](https://developer.vive.com/resources/viveport/store-guide/) with instructions for [Beta testing](https://developer.vive.com/resources/viveport/store-guide/viveport-beta-testing-guide/english/).
+
 In all of these systems you will need to register 
-and maybe pay a fee in order to publish.
+and, for some, pay a fee in order to publish.
 
 ## Interactive Systsem
 
@@ -102,6 +105,7 @@ Look at the test plan and reflect on how you could test
 this within your application.
 
 Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
+
 
 
 Consider such type of testing for your coursework.
