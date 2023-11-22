@@ -54,6 +54,25 @@ available your game after development.
 
 
 
+## Interactive Systsem
+
+VR, as with other computer generated games
+is an interactive system which can include a wide variety of information:
+
+It usually invovles you distributing a dynamic 3D
+scene content including:
+
+- 3D models and material/textures, and effects (inc. particle systems)
+- Animations.
+- Physics simulations.
+- Lighting effects on content.
+
+You will need to be aware of the
+computing requirements to run this at appropiate framerates in
+teh user's computer.
+
+
+[![IMAGE ALT TEXT](https://i.ytimg.com/vi/NSzje6I3BZA/maxresdefault.jpg)](https://www.youtube.com/watch?v=NSzje6I3BZA "Framerate")
 
 ## Recomendations for publishing interactive VR
 
