@@ -5,28 +5,33 @@ exercises: 2
 ---
 
 
-This tutorial will allow you 
-to experience the implementation of 3D environments 
-on web interfaces by using WebGL. 
+## Introduction
+
+This tutorial will allow you to implement
+a basic interoperable 3D environments 
+on a web interface by using WebGL. 
 
 WebGL (Web Graphics Library) is a JavaScript API 
 for rendering interactive 2D and 3D graphics within 
 any compatible web browser without the use of plug-ins.
+
 WebGL is fully integrated with other web standards, allowing 
 GPU-accelerated usage of physics and image processing and 
 effects as part of the web page canvas. It uses the HTML5 canvas element. 
+
+In this tutorial, you will follow a few steps to 
+implement 3D environments, 
+including support for Virtual Reality (VR), on the web. 
+
 You can use Three.JS (https://threejs.org/) or AFrame (https://aframe.io/) 
-for your application, although we'll revise here the way to 
-use Three.JS with Node.JS technology.
-
-Introduction
-
-In this tutorial, we will test all the infrastructure required to implement 3D environments, including support for Virtual Reality (VR), on the web. It is meant to help you implement an example from THREE.JS.
+for your application, although we'll do an example using mostly THREE.JS.
 
 
-Exercise 1. Create a website
+## Step 1. Create a website
 
-Using https://brighton.domains/ create a folder on a subdomain, such as vrtest.yourname.brighton.domains. Through this, you will be able to test your own VR example, such as mine: https://vrtest.kre.brighton.domains
+
+Using https://brighton.domains/ create a folder on a subdomain,
+such as vrtest.yourname.brighton.domains. Through this, you will be able to test your own VR example, such as mine: https://vrtest.kre.brighton.domains
 
 
 For this, you will need to:
