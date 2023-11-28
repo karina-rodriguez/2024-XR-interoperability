@@ -188,10 +188,11 @@ Some of these are specified below.
 
 ## 8th Wall
 
-https://www.8thwall.com/
+Commercial product built entirely using standards-compliant JavaScript and WebGL.
 
+Allows developers to deliver AR experiences over the web, using their own [framework](https://www.8thwall.com/products-web).
 
-See some examples:
+See some examples of applications:
 
 - [Wol - a mixed reality experience for the web from Niantic](https://niantic.8thwall.app/meetwol/)
 - [Oreo Playful Dunks: Oreo's Web AR Game Enabled by Face-Tracking, with Rewards for Top Players!](https://alivenow.8thwall.app/oreo-playful-dunks/)
@@ -205,10 +206,10 @@ Model Viewer: [https://modelviewer.dev/examples/loading/index.html](https://mode
 Editor: [https://modelviewer.dev/editor/](https://modelviewer.dev/editor/)
 
 
+
 ## Three.JS
 
-Most popular 3D library to make
-3D content on a webpage.
+Most popular 3D library to make 3D content on a webpage.
 
 It allows to use the OpenGL pipeline.
 
