@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial'
+title: '3DOF Tutorial'
 teaching: 10
 exercises: 2
 ---
