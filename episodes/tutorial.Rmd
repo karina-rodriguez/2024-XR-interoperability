@@ -14,10 +14,11 @@ a user to visualise and interact with a 360&deg; image.
 
 **Requirements:**
 
-You will need basic awarness of how a webserver works, as well
+You will need basic awareness of how a webserver works, as well
 as basic knowledge of HTML and Javascript.
 
 ---
+
 
 ## Create a basic web server image in Docker
 
@@ -29,9 +30,13 @@ For this exercise, you can either use:
 
 ### Using brighton.domains
 
+Using https://brighton.domains/, 
+access the server to create a new
+subdomain and create a folder to serve the subdomain.
 
-Access the server to create a new
-subdomain along with an
+For example, test.yourname.brighton.domains. 
+
+In the folder, include an
 index.html which displays a basic hello world.
 
 

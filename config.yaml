@@ -66,6 +66,7 @@ episodes:
 - tutorial.Rmd
 - distribution-of-vr.Rmd
 - publishing-webxr.Rmd
+- webxr-tutorial.Rmd
 
 # Information for Learners
 learners:

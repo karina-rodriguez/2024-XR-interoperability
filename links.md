@@ -7,4 +7,4 @@ any links that you are not going to use.
 [360&deg; experiences]: https://www.360cities.net/
 [rstudio]: https://www.rstudio.com/
 [carpentries-workbench]: https://carpentries.github.io/sandpaper-docs/
-
+[website-basic]: episodes/tutorial.Rmd#create-a-basic-web-server-image-in-docker
