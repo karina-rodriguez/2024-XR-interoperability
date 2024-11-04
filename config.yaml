@@ -11,23 +11,23 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Distribution Platforms for XR Experiences'
+title: 'Interoperable XR Experiences'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2023-09-25'
+created: '2024-11-04'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'XR, interoperability, degrees of freedom, lesson, The Carpentries'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'stable'
 
 # License of the lesson materials (recommended CC-BY 4.0)
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/karina-rodriguez/2023-xr-interoperability'
+source: 'https://github.com/karina-rodriguez/2024-xr-interoperability'
 
 # Default branch of your lesson
 branch: 'main'
