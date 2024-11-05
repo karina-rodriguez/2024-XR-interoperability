@@ -1,31 +1,53 @@
 ---
-title: 'Distribution 3 DoF Experiences'
+title: 'Distributing 3DoF Experiences'
 teaching: 10
 exercises: 2
 ---
 
-
-
-## Examples of 3DoF Experiences
+All panoramas can be created using specialized panoramic cameras, 
+wide-angle lenses, or by using software to stitch together 
+photos taken from a single vantage point.
+ 
+## 3DoF XR experiences on the web
 
 Some websites allow for accessing 360 immersive image-renders 
 with suitable interfaces for the user to move using 3DoF. 
+
 When they don't have access to a device,
 such as a mobile phone,
 users can use the mouse to manipulate the virtual camera.
 
 This type of experience allows for the wider access.
 
-See the following examples:
+
+
+These allow for rendering an image or a video on the web.
+
+
+::::::::::::::::::::::::::::::::::::: challenge 
+
+### Challenge: Distributing XR experiences
+
+In groups and using the Oculus quest, look at the various platforms with 3DoF content:
 
 - [360 cities](https://www.360cities.net/)
 - [Arts and Culture 360 videos](https://artsandculture.google.com/project/360-videos)
+- [Meta Quest](https://www.meta.com/en-gb/experiences/)
+- [Valve Steam](https://store.steampowered.com/)
+- [VR YouTube](https://vr.youtube.com/)
+- [Facebook 360](https://www.facebook.com/Facebook360/)
 
+Reflect on the easy of access, the potential number of users,
+the richness of the content and on how the distribution platform 
+might impact (or not) the amount 
+of potential users.
+
+::::::::::::::::::::::::::::::::
+
+## Phone apps
 Beside delivering 3DoF content websites, it is also possible
-to develop applications to be installed
+to develop mobile applications to be installed
 on a device which allow interaction with this type of content.
-
-## Developing 3DoF XR experiences on the web
 
 For developing this type of experience,
 the best option is to use an existing platform, or
@@ -39,41 +61,15 @@ Hence, custom-made code is required to access
 more complex/interactive functionality.
 
 
-
-Existing platforms include:
-
-- [VR YouTube](https://vr.youtube.com/)
-- [Facebook 360](https://www.facebook.com/Facebook360/)
-
-You can also include your own viewer using existing libraries, for example:
-
-- [Google VR view](https://developers.google.com/vr/develop/web/vrview-web)
-
-
-These allow for rendering an image or a video on the web.
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge: Distributing XR experiences
-
-Explore how various types of experiences can be 
-distributed to reach a wide number of users.
-
-Reflect on how the distribution platform might impact (or not) the amount 
-of potential users.
-
-:::::::::::::::::::::::: solution 
-
-
-## Output
- 
+## Platforms for distribution
 There are many different platforms for distributing XR experiences. 
 Here is a list of the most popular ones.
 
-- [Meta Quest](https://www.meta.com/en-gb/experiences/)
-- [Valve Steam](https://store.steampowered.com/)
 - [VR YouTube](https://vr.youtube.com/)
 - [Facebook 360](https://www.facebook.com/Facebook360/)
+- [Meta Quest](https://www.meta.com/en-gb/experiences/)
+- [Valve Steam](https://store.steampowered.com/)
+
 
 Note that they distribute content both through a web browser and 
 through a device such as a phone or headset.
@@ -88,10 +84,12 @@ on mobile phones through platforms such as Google and Apple apps:
 In most of these cases, the potential users is dependent on the
 specific device they target.
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+
+You can also include your own viewer using existing libraries, for example:
+
+- [Google VR view](https://developers.google.com/vr/develop/web/vrview-web)
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
@@ -101,5 +99,12 @@ specific device they target.
 on the functionality which can be accessed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[^1]: Chambers's Encyclopaedia. (1973). United Kingdom: International Learning Systems, p747
+
+
+[^2]: History of Panoramic Photography, Digital Collection, University Libraries Washington. https://content.lib.washington.edu/panoramweb/history.html
+
+[^3]: https://skylum.com/blog/360-degree-photography
 
 

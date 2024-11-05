@@ -5,14 +5,12 @@ exercises: 2
 ---
 
 The Degrees of Freedom a user has in an XR experience determine the 
-level of 
-movement they are allowed within the environment. We use this term,
+level of  movement they are allowed within the environment. We use this term,
 as Degrees of Freedom (DoF) refer to the number of basic ways 
 a rigid object can move through 3D space.
 
 We normally distinguish between 3 or 6 degrees of freedom 
 when describing XR experiences. See below for further information about each.
-
 
 ## 3 Degress of Freedom (3DoF)
 In some cases, as user is restricted mostly to move their head to 
