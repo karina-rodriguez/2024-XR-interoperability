@@ -2,21 +2,24 @@
 site: sandpaper::sandpaper_site
 ---
 
-This lesson discusses the basics for distributing XR applications, including VR and AR applications.
+![&copy; Victoria from AdobeStock 2024.](fig/AdobeStock_997266558.jpeg)
+This lesson explores the distribution of Extended Reality (XR) experiences, 
+focusing on the various platforms and devices available for accessing these immersive applications. 
 
-It covers topics such as:
+With XR's growing reach across Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR), 
+understanding how experiences are distributed is essential. 
+
+This includes examining different types of platforms—ranging from app stores like Meta Horizon and Steam 
+to web-based solutions—and considering factors such as platform compatibility, 
+device requirements, and market reach, 
+all of which shape the accessibility and success of XR content.
+
+The lesson covers topics such as:
 
 - Distributing VR experiences to potential users.
-- Issues/challenges to consider.
-- Interoperability issues.
-- OpenXR and WebXR.
+- Issues and challenges to consider.
+- Interoperability of content on devices.
+- Standards such as OpenXR and WebXR to underpin interoperablity.
 
 
-The lesson material is built with [The Carpentries Workbench][workbench]. 
-It has been delivered as part of the module 2023/2024 - CI606 Virtual Reality Systems.
-
-
-
-
-[workbench]: https://carpentries.github.io/sandpaper-docs
 
