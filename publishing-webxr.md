@@ -90,6 +90,9 @@ OpenXR seeks to solve AR/VR fragmentation by:
 [![IMAGE ALT TEXT](https://i.ytimg.com/vi/PxPIr_C5s7k/maxresdefault.jpg)](https://www.youtube.com/watch?v=PxPIr_C5s7k "OpenXR")
 
 
+### Godot and OpenXR
+
+Godot provides a modular XR system that abstracts many of the different [XR platform](https://docs.godotengine.org/en/stable/tutorials/xr/setting_up_xr.html) specifics away from the user.
 
 ### Unity and OpenXR
 
@@ -152,7 +155,7 @@ See this [table specifying varied browsers' support for the WebXR Device API](ht
 
 ## Challenge: Deploy XR examples with XR Viewer
 
-Using your phone or a headset, access the following examples:[https://immersive-web.github.io/webxr-samples/](https://immersive-web.github.io/webxr-samples/)
+Using your phone or a headset, access the following examples: [https://immersive-web.github.io/webxr-samples/](https://immersive-web.github.io/webxr-samples/)
 
 Note that you might need to install a browser which supports some of the functionalities
 as specified in [here.](https://immersiveweb.dev/#supporttable)
@@ -160,50 +163,26 @@ as specified in [here.](https://immersiveweb.dev/#supporttable)
 
 ::::::
 
-## VR applications on the web
-
-WebXR allows to build VR applications on the web, such as [Mozilla Hubs](https://hubs.mozilla.com/),
-which is a collaborative platform over the web that allows to create your own content.
-
-To build 3D content: [https://hubs.mozilla.com/spoke](https://hubs.mozilla.com/spoke)
-
-Note that Firefox has introduced also a XR-specific browser called [Wolvic](https://www.wolvic.com/en/).
 
 
-<iframe src="https://5378f595f9.us2.myhubs.net/2DCtKV4?embed_token=6d0c28fadff627bc460150c6976a136c" 
-style="width: 100%; 
-height: 768px;" 
-allow="microphone; camera; vr; speaker;"></iframe>
 
-Link to Hub: [Mozilla Hub](https://5378f595f9.us2.myhubs.net/2DCtKV4/fair-unconscious-walkabout)
+## Libraries and Frameworks
 
 
-## Other libraries and Frameworks
-
-
-There are other libraries and frameworks which allow to easily create 3D content
+There are various libraries and frameworks which allow to create 3D content
 on the browser, some of which support basic VR/XR capabilities.
 
 Some of these are specified below.
 
-## 8th Wall
 
-Commercial product built entirely using standards-compliant JavaScript and WebGL.
 
-Allows developers to deliver AR experiences over the web, using their own [framework](https://www.8thwall.com/products-web).
-
-See some examples of applications:
-
-- [Wol - a mixed reality experience for the web from Niantic](https://niantic.8thwall.app/meetwol/)
-- [Oreo Playful Dunks: Oreo's Web AR Game Enabled by Face-Tracking, with Rewards for Top Players!](https://alivenow.8thwall.app/oreo-playful-dunks/)
-- [atmoky Spatial Audio (A-Frame)](https://atmoky.8thwall.app/spatialaudio-robot/)
 
 ## Google model viewer
 
 Allows to easily display interactive 3D models on the web.
 
-Model Viewer: [https://modelviewer.dev/examples/loading/index.html](https://modelviewer.dev/examples/loading/index.html)
-Editor: [https://modelviewer.dev/editor/](https://modelviewer.dev/editor/)
+- Model Viewer: [https://modelviewer.dev/examples/loading/index.html](https://modelviewer.dev/examples/loading/index.html)
+- Editor: [https://modelviewer.dev/editor/](https://modelviewer.dev/editor/)
 
 
 
@@ -213,6 +192,26 @@ Most popular 3D library to make 3D content on a webpage.
 
 It allows to use the OpenGL pipeline.
 
-ThreeJS: [https://threejs.org/](https://threejs.org/)
-Fundamentals: [https://threejs.org/manual/#en/fundamentals](https://threejs.org/manual/#en/fundamentals)
+- ThreeJS: [https://threejs.org/](https://threejs.org/)
+- Fundamentals: [https://threejs.org/manual/#en/fundamentals](https://threejs.org/manual/#en/fundamentals)
+
+## Commercial libraries
+Commercial product built entirely using standards-compliant JavaScript and WebGL.
+
+### 8th Wall
+
+
+Allows developers to deliver AR experiences over the web, using their own [framework](https://www.8thwall.com/products-web).
+
+See some examples of applications:
+
+- [Wol - a mixed reality experience for the web from Niantic](https://niantic.8thwall.app/meetwol/)
+- [Oreo Playful Dunks: Oreo's Web AR Game Enabled by Face-Tracking, with Rewards for Top Players!](https://alivenow.8thwall.app/oreo-playful-dunks/)
+- [atmoky Spatial Audio (A-Frame)](https://atmoky.8thwall.app/spatialaudio-robot/)
+
+### BlipAR
+
+Blippbuilder [framework](https://www.blippar.com/build-ar) uses simple drag-and-drop interface to upload content and create AR experiences. 
+
+- [Augmented Reality roadtrip across Australia](https://www.blippar.com/ar-creations/fanta)
 
