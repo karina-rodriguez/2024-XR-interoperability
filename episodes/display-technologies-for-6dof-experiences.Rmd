@@ -18,6 +18,7 @@ This include:
 
 Is based on multiple projectors on flat
 or curved surfaces. There are multiple types of configurations including:
+
 - Flat area
 - Room-sized cube
 - Immersive screen
@@ -29,11 +30,19 @@ Limitation to one user.
 
 [![IMAGE ALT TEXT](https://i.ytimg.com/vi/o18TA6IlPXI/maxresdefault.jpg)](https://www.youtube.com/watch?v=o18TA6IlPXI "Igloo projection")
 
-## Display based technology
+## Display-based technology
 
-Uses LCD/LED or other technologies for displaying the pixels.
+Use LCD/LED or other technologies for displaying the pixels.
 
-The technologies for stereoscopic viewing include two different methods for sending information
+
+![Audience wearing special glasses watch a 3D "stereoscopic film" at the Telekinema on the South Bank in London during the Festival of Britain &copy; The National Archives UK under the [Open Government Licence version 1.0 (OGL v1.0).](https://commons.wikimedia.org/wiki/File:The_National_Archives_UK_-_WORK_25-208.jpg)](https://upload.wikimedia.org/wikipedia/commons/b/b0/The_National_Archives_UK_-_WORK_25-208.jpg)
+
+
+
+Some display-based technologies still utilize special glasses for 
+stereoscopic viewing.
+
+These use two different methods for sending information
 to both eyes:
 
 - Passive 3D 
@@ -65,8 +74,7 @@ This technology is more expensive but has better resolution.
 
 ![Visualization how active 3D TVs work &copy; (CC BY-SA 4.0 Wikimedia Commons)[https://en.wikipedia.org/wiki/Active_shutter_3D_system#/media/File:Active-3d-shutter-technology.gif]](https://upload.wikimedia.org/wikipedia/commons/b/bb/Active-3d-shutter-technology.gif)
 
-
-## 3D screens
+## 3D displays/laptops
  
 3D TVs no longer produced since 2016, and there were 
 multiple reasons for its failure.
@@ -106,7 +114,19 @@ Headsets can be compared according to these [specifications](https://en.wikipedi
 ).
 
 
-## Challenges for development 
+::::::::::: challenge
+
+## Challenge: What are the main issues when developing for headsets
+
+Think which are some of the main challenges
+when thinking which platform/HDM to target for the
+development of immersive experiences.
+
+:::::::::::
+
+
+
+
 
 When distribution for 6DoF experience, it is important
 to keep these specifications into consideration.

@@ -1,19 +1,40 @@
 ---
-title: 'publishing interactive VR'
+title: 'Distributing 6DoF experiences'
 teaching: 10
 exercises: 2
 ---
 
+## Interactive Systsem
 
 
-Depending on which devices you are supporting, you can
-publishing content in an application store of each device:
+6DoF experiences are usually full immersive VR applications.
+
+
+VR, as with other computer generated games
+is an interactive system which can include a wide variety of information:
+
+It usually invovles you distributing a dynamic 3D
+scene content including:
+
+- 3D models and material/textures, and effects (inc. particle systems)
+- Animations.
+- Physics simulations.
+- Lighting effects on content.
+
+You will need to be aware of the
+computing requirements to run this at appropriate framerates in
+the user's computer.
+
+The most common rout for distribution is through app stores of major headset providers.
+
+This usually required deciding which devices the application will support.
 
 ![Steam Logo &copy; Steam, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg){alt="steam logo" width=30%}
 
-- [Steam](https://store.steampowered.com/), for headsets
+Some of the largest stores include:
+- [Steam Store](https://store.steampowered.com/), for headsets
 including HTC Vive or Vive Pro, HP Reverb G2
-- [Meta Quest](https://www.meta.com/en-gb/experiences/), for headsets
+- [Meta Store](https://www.meta.com/en-gb/experiences/), for headsets
 including Oculus Rift, Oculus Go, Oculus Quest,  Samsung Gear VR
 - [Microsoft Store](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens),
 for headsets such as HP Reverb G2 VR Headset and Hololens.
@@ -41,20 +62,14 @@ to become a partner, including as a:
 ### Publish in Meta Quest
 For Meta Quest, there are two paths: 
 
-1. OculusStore: this has an extensive approval process. This includes
-doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/).
-
-2. AppLab or SideQuest:
-
-[Meta Quest AppLab](https://developer.oculus.com/manage/) offers an
-alternative path.
-
-To distribute, you can share your app via a URL, providing
+1. Meta Store: this has an extensive approval process. This includes
+doing a [technical review](https://developer.oculus.com/resources/publish-quest-req/). To distribute, you can share your app via a URL, providing
 direct access to the description page,
 and an option to purchase or install the app. 
 
-[SideQuest](https://sidequestvr.com/apps/applab/) is
-another platform for publishing apps for the Oculus Quest.
+2. [AppLab or SideQuest](https://sidequestvr.com/apps/applab/): offers an
+alternative path, as it an app store that enables you to download and experiment with apps that are not approved for the
+Oculus Quest.
 
 Consider joining, if you are planning to make
 available your game after development.
@@ -70,27 +85,6 @@ The guidelines for publishing in VIVE are as follows:
 In all of these systems you will need to register 
 and, for some, pay a fee in order to publish.
 
-## Interactive Systsem
-
-VR, as with other computer generated games
-is an interactive system which can include a wide variety of information:
-
-It usually invovles you distributing a dynamic 3D
-scene content including:
-
-- 3D models and material/textures, and effects (inc. particle systems)
-- Animations.
-- Physics simulations.
-- Lighting effects on content.
-
-You will need to be aware of the
-computing requirements to run this at appropiate framerates in
-the user's computer.
-
-
-
-
-
 
 :::::: challenge
 
@@ -104,7 +98,6 @@ Look at the test plan and reflect on how you could test
 this within your application.
 
 Examine the test plan for the [Meta Quest](https://developer.oculus.com/resources/publish-quest-req/#test-plan).
-
 
 
 Consider such type of testing for your coursework.
