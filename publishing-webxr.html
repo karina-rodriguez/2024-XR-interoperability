@@ -108,11 +108,11 @@
   Interoperable XR Experiences
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 78%" class="percentage">
-    78%
+<aside class="col-md-12 lesson-progress"><div style="width: 88%" class="percentage">
+    88%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 78%" aria-valuenow="78" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 88%" aria-valuenow="88" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -250,7 +250,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="distribution-of-vr.html">7. publishing interactive VR</a>
+        <a href="distribution-of-vr.html">7. Distributing 6DoF experiences</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -272,22 +272,12 @@
         <ul><li><a href="#vr-interoperability">VR Interoperability</a></li>
 <li><a href="#openxr">OpenXR</a></li>
 <li><a href="#webxr">WebXR</a></li>
-<li><a href="#vr-applications-on-the-web">VR applications on the web</a></li>
-<li><a href="#other-libraries-and-frameworks">Other libraries and Frameworks</a></li>
-<li><a href="#th-wall">8th Wall</a></li>
+<li><a href="#libraries-and-frameworks">Libraries and Frameworks</a></li>
 <li><a href="#google-model-viewer">Google model viewer</a></li>
 <li><a href="#three.js">Three.JS</a></li>
+<li><a href="#commercial-libraries">Commercial libraries</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush10">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading10">
-        <a href="webxr-tutorial.html">9. WebXR Tutorial</a>
-    </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -335,16 +325,16 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="distribution-of-vr.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="webxr-tutorial.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="distribution-of-vr.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: publishing
+          Previous: Distributing 6DoF
         </a>
-        <a class="chapter-link float-end" href="webxr-tutorial.html" rel="next">
-          Next: WebXR Tutorial...
+        <a class="chapter-link float-end" href="index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -384,7 +374,7 @@ VR/XR applications?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Most of the time you will want your VR/XR application to seamlessly
 operate across various devices. This will avoid you having to port the
@@ -441,6 +431,12 @@ run on any system that exposes the OpenXR APIs. © Khronos Group
 <li>Enabling applications to reach a wider array of hardware.</li>
 </ul><p><a href="https://www.youtube.com/watch?v=PxPIr_C5s7k" title="OpenXR" class="external-link"><img src="https://i.ytimg.com/vi/PxPIr_C5s7k/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
 <div class="section level3">
+<h3 id="godot-and-openxr">Godot and OpenXR<a class="anchor" aria-label="anchor" href="#godot-and-openxr"></a></h3>
+<p>Godot provides a modular XR system that abstracts many of the
+different <a href="https://docs.godotengine.org/en/stable/tutorials/xr/setting_up_xr.html" class="external-link">XR
+platform</a> specifics away from the user.</p>
+</div>
+<div class="section level3">
 <h3 id="unity-and-openxr">Unity and OpenXR<a class="anchor" aria-label="anchor" href="#unity-and-openxr"></a></h3>
 <p>Unity supports <a href="https://docs.unity3d.com/Manual/com.unity.xr.openxr.html" class="external-link">OpenXR</a>
 natively. But different Unity versions will support different plugins
@@ -492,31 +488,35 @@ different browsers.</p>
 <h3 class="callout-title">Challenge: Deploy XR examples with XR
 Viewer</h3>
 <div class="callout-content">
-<p>Using your phone or a headset, access the following examples:<a href="https://immersive-web.github.io/webxr-samples/" class="external-link">https://immersive-web.github.io/webxr-samples/</a></p>
+<p>Using your phone or a headset, access the following examples: <a href="https://immersive-web.github.io/webxr-samples/" class="external-link">https://immersive-web.github.io/webxr-samples/</a></p>
 <p>Note that you might need to install a browser which supports some of
 the functionalities as specified in <a href="https://immersiveweb.dev/#supporttable" class="external-link">here.</a></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="vr-applications-on-the-web">VR applications on the web<a class="anchor" aria-label="anchor" href="#vr-applications-on-the-web"></a></h2>
-<hr class="half-width"><p>WebXR allows to build VR applications on the web, such as <a href="https://hubs.mozilla.com/" class="external-link">Mozilla Hubs</a>, which is a
-collaborative platform over the web that allows to create your own
-content.</p>
-<p>To build 3D content: <a href="https://hubs.mozilla.com/spoke" class="external-link">https://hubs.mozilla.com/spoke</a></p>
-<p>Note that Firefox has introduced also a XR-specific browser called <a href="https://www.wolvic.com/en/" class="external-link">Wolvic</a>.</p>
-<iframe src="https://5378f595f9.us2.myhubs.net/2DCtKV4?embed_token=6d0c28fadff627bc460150c6976a136c" style="width: 100%;
-height: 768px;" allow="microphone; camera; vr; speaker;">
-</iframe>
-<p>Link to Hub: <a href="https://5378f595f9.us2.myhubs.net/2DCtKV4/fair-unconscious-walkabout" class="external-link">Mozilla
-Hub</a></p>
-</section><section><h2 class="section-heading" id="other-libraries-and-frameworks">Other libraries and Frameworks<a class="anchor" aria-label="anchor" href="#other-libraries-and-frameworks"></a></h2>
-<hr class="half-width"><p>There are other libraries and frameworks which allow to easily create
-3D content on the browser, some of which support basic VR/XR
+</section><section><h2 class="section-heading" id="libraries-and-frameworks">Libraries and Frameworks<a class="anchor" aria-label="anchor" href="#libraries-and-frameworks"></a></h2>
+<hr class="half-width"><p>There are various libraries and frameworks which allow to create 3D
+content on the browser, some of which support basic VR/XR
 capabilities.</p>
 <p>Some of these are specified below.</p>
-</section><section><h2 class="section-heading" id="th-wall">8th Wall<a class="anchor" aria-label="anchor" href="#th-wall"></a></h2>
+</section><section><h2 class="section-heading" id="google-model-viewer">Google model viewer<a class="anchor" aria-label="anchor" href="#google-model-viewer"></a></h2>
+<hr class="half-width"><p>Allows to easily display interactive 3D models on the web.</p>
+<ul><li>Model Viewer: <a href="https://modelviewer.dev/examples/loading/index.html" class="external-link">https://modelviewer.dev/examples/loading/index.html</a>
+</li>
+<li>Editor: <a href="https://modelviewer.dev/editor/" class="external-link">https://modelviewer.dev/editor/</a>
+</li>
+</ul></section><section><h2 class="section-heading" id="three-js">Three.JS<a class="anchor" aria-label="anchor" href="#three-js"></a></h2>
+<hr class="half-width"><p>Most popular 3D library to make 3D content on a webpage.</p>
+<p>It allows to use the OpenGL pipeline.</p>
+<ul><li>ThreeJS: <a href="https://threejs.org/" class="external-link">https://threejs.org/</a>
+</li>
+<li>Fundamentals: <a href="https://threejs.org/manual/#en/fundamentals" class="external-link">https://threejs.org/manual/#en/fundamentals</a>
+</li>
+</ul></section><section><h2 class="section-heading" id="commercial-libraries">Commercial libraries<a class="anchor" aria-label="anchor" href="#commercial-libraries"></a></h2>
 <hr class="half-width"><p>Commercial product built entirely using standards-compliant
 JavaScript and WebGL.</p>
+<div class="section level3">
+<h3 id="th-wall">8th Wall<a class="anchor" aria-label="anchor" href="#th-wall"></a></h3>
 <p>Allows developers to deliver AR experiences over the web, using their
 own <a href="https://www.8thwall.com/products-web" class="external-link">framework</a>.</p>
 <p>See some examples of applications:</p>
@@ -527,32 +527,31 @@ Playful Dunks: Oreo’s Web AR Game Enabled by Face-Tracking, with Rewards
 for Top Players!</a></li>
 <li><a href="https://atmoky.8thwall.app/spatialaudio-robot/" class="external-link">atmoky
 Spatial Audio (A-Frame)</a></li>
-</ul></section><section><h2 class="section-heading" id="google-model-viewer">Google model viewer<a class="anchor" aria-label="anchor" href="#google-model-viewer"></a></h2>
-<hr class="half-width"><p>Allows to easily display interactive 3D models on the web.</p>
-<p>Model Viewer: <a href="https://modelviewer.dev/examples/loading/index.html" class="external-link">https://modelviewer.dev/examples/loading/index.html</a>
-Editor: <a href="https://modelviewer.dev/editor/" class="external-link">https://modelviewer.dev/editor/</a></p>
-</section><section><h2 class="section-heading" id="three-js">Three.JS<a class="anchor" aria-label="anchor" href="#three-js"></a></h2>
-<hr class="half-width"><p>Most popular 3D library to make 3D content on a webpage.</p>
-<p>It allows to use the OpenGL pipeline.</p>
-<p>ThreeJS: <a href="https://threejs.org/" class="external-link">https://threejs.org/</a>
-Fundamentals: <a href="https://threejs.org/manual/#en/fundamentals" class="external-link">https://threejs.org/manual/#en/fundamentals</a></p>
-<!--
+</ul></div>
+<div class="section level3">
+<h3 id="blipar">BlipAR<a class="anchor" aria-label="anchor" href="#blipar"></a></h3>
+<p>Blippbuilder <a href="https://www.blippar.com/build-ar" class="external-link">framework</a>
+uses simple drag-and-drop interface to upload content and create AR
+experiences.</p>
+<ul><li><a href="https://www.blippar.com/ar-creations/fanta" class="external-link">Augmented
+Reality roadtrip across Australia</a></li>
+</ul><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
+ --></div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="distribution-of-vr.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="webxr-tutorial.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="distribution-of-vr.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: publishing
+          Previous: Distributing 6DoF
         </a>
-        <a class="chapter-link float-end" href="webxr-tutorial.html" rel="next">
-          Next: WebXR Tutorial...
+        <a class="chapter-link float-end" href="index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>

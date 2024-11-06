@@ -306,7 +306,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="distribution-of-vr.html">7. publishing interactive VR</a>
+        <a href="distribution-of-vr.html">7. Distributing 6DoF experiences</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -319,18 +319,6 @@
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
         <a href="publishing-webxr.html">8. Interoperable XR</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush10">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading10">
-        <a href="webxr-tutorial.html">9. WebXR Tutorial</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -932,7 +920,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -987,7 +975,7 @@ documentation</a>.</p>
   Code to add title
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1068,18 +1056,29 @@ Commons</a>
 </h2>
 <hr class="half-width">
 <p>Is based on multiple projectors on flat or curved surfaces. There are
-multiple types of configurations including: - Flat area - Room-sized
-cube - Immersive screen</p>
+multiple types of configurations including:</p>
+<ul>
+<li>Flat area</li>
+<li>Room-sized cube</li>
+<li>Immersive screen</li>
+</ul>
 <p>By incorporating motion sensors, it allows to record the position
 (e.g. head, hands) of the viewer.</p>
 <p>Limitation to one user.</p>
 <p><a href="https://www.youtube.com/watch?v=o18TA6IlPXI" title="Igloo projection" class="external-link"><img src="https://i.ytimg.com/vi/o18TA6IlPXI/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
-</section><section><h2 class="section-heading" id="display-based-technology">Display based technology<a class="anchor" aria-label="anchor" href="#display-based-technology"></a>
+</section><section><h2 class="section-heading" id="display-based-technology">Display-based technology<a class="anchor" aria-label="anchor" href="#display-based-technology"></a>
 </h2>
 <hr class="half-width">
-<p>Uses LCD/LED or other technologies for displaying the pixels.</p>
-<p>The technologies for stereoscopic viewing include two different
-methods for sending information to both eyes:</p>
+<p>Use LCD/LED or other technologies for displaying the pixels.</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/The_National_Archives_UK_-_WORK_25-208.jpg" alt="Audience wearing special glasses watch a 3D “stereoscopic film” at the Telekinema on the South Bank in London during the Festival of Britain © The National Archives UK under the Open Government Licence version 1.0 (OGL v1.0)." class="figure mx-auto d-block"><div class="figcaption">Audience wearing special glasses watch a 3D
+“stereoscopic film” at the Telekinema on the South Bank in London during
+the Festival of Britain © The National Archives UK under the <a href="https://commons.wikimedia.org/wiki/File:The_National_Archives_UK_-_WORK_25-208.jpg" class="external-link">Open
+Government Licence version 1.0 (OGL v1.0).</a>
+</div>
+</figure><p>Some display-based technologies still utilize special glasses for
+stereoscopic viewing.</p>
+<p>These use two different methods for sending information to both
+eyes:</p>
 <ul>
 <li>Passive 3D</li>
 <li>Active 3D</li>
@@ -1110,7 +1109,7 @@ screen.</p>
 4.0 Wikimedia Commons)[<a href="https://en.wikipedia.org/wiki/Active_shutter_3D_system#/media/File:Active-3d-shutter-technology.gif" class="external-link uri">https://en.wikipedia.org/wiki/Active_shutter_3D_system#/media/File:Active-3d-shutter-technology.gif</a>]</div>
 </figure>
 </div>
-</section><section><h2 class="section-heading" id="d-screens">3D screens<a class="anchor" aria-label="anchor" href="#d-screens"></a>
+</section><section><h2 class="section-heading" id="d-displayslaptops">3D displays/laptops<a class="anchor" aria-label="anchor" href="#d-displayslaptops"></a>
 </h2>
 <hr class="half-width">
 <p>3D TVs no longer produced since 2016, and there were multiple reasons
@@ -1145,17 +1144,27 @@ screen’s resolution as seen from an angle.</p>
 <figure><img src="fig/ppd.png" alt="It’s a direct result of the number of pixels and the viewing distance." class="figure mx-auto d-block"><div class="figcaption">It’s a direct result of the number of pixels and
 the viewing distance.</div>
 </figure><p>Headsets can be compared according to these <a href="https://en.wikipedia.org/wiki/List_of_virtual_reality_headsets" class="external-link">specifications</a>.</p>
+<div id="challenge-what-are-the-main-issues-when-developing-for-headsets" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-</section><section><h2 class="section-heading" id="challenges-for-development">Challenges for development<a class="anchor" aria-label="anchor" href="#challenges-for-development"></a>
-</h2>
-<hr class="half-width">
+<div id="challenge-what-are-the-main-issues-when-developing-for-headsets" class="callout-inner">
+<h3 class="callout-title">Challenge: What are the main issues when
+developing for headsets</h3>
+<div class="callout-content">
+<p>Think which are some of the main challenges when thinking which
+platform/HDM to target for the development of immersive experiences.</p>
+</div>
+</div>
+</div>
 <p>When distribution for 6DoF experience, it is important to keep these
 specifications into consideration.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">publishing interactive VR</a></p>
+</div>
+</section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">Distributing 6DoF experiences</a></p>
 <hr>
 <p>Last updated on 2024-11-06 |
 
@@ -1163,27 +1172,37 @@ any links that you are not going to use.
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>Depending on which devices you are supporting, you can publishing
-content in an application store of each device:</p>
+<section><h2 class="section-heading" id="interactive-systsem">Interactive Systsem<a class="anchor" aria-label="anchor" href="#interactive-systsem"></a>
+</h2>
+<hr class="half-width">
+<p>6DoF experiences are usually full immersive VR applications.</p>
+<p>VR, as with other computer generated games is an interactive system
+which can include a wide variety of information:</p>
+<p>It usually invovles you distributing a dynamic 3D scene content
+including:</p>
+<ul>
+<li>3D models and material/textures, and effects (inc. particle
+systems)</li>
+<li>Animations.</li>
+<li>Physics simulations.</li>
+<li>Lighting effects on content.</li>
+</ul>
+<p>You will need to be aware of the computing requirements to run this
+at appropriate framerates in the user’s computer.</p>
+<p>The most common rout for distribution is through app stores of major
+headset providers.</p>
+<p>This usually required deciding which devices the application will
+support.</p>
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" style="width:30.0%" alt="steam logo" class="figure mx-auto d-block"><div class="figcaption">Steam Logo © Steam, Public domain, via Wikimedia
 Commons</div>
-</figure><ul>
-<li>
-<a href="https://store.steampowered.com/" class="external-link">Steam</a>, for headsets
-including HTC Vive or Vive Pro, HP Reverb G2</li>
-<li>
-<a href="https://www.meta.com/en-gb/experiences/" class="external-link">Meta Quest</a>,
-for headsets including Oculus Rift, Oculus Go, Oculus Quest, Samsung
-Gear VR</li>
-<li>
-<a href="https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens" class="external-link">Microsoft
-Store</a>, for headsets such as HP Reverb G2 VR Headset and
-Hololens.</li>
-<li>
+</figure><p>Some of the largest stores include: - <a href="https://store.steampowered.com/" class="external-link">Steam Store</a>, for headsets
+including HTC Vive or Vive Pro, HP Reverb G2 - <a href="https://www.meta.com/en-gb/experiences/" class="external-link">Meta Store</a>, for
+headsets including Oculus Rift, Oculus Go, Oculus Quest, Samsung Gear VR
+- <a href="https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens" class="external-link">Microsoft
+Store</a>, for headsets such as HP Reverb G2 VR Headset and Hololens. -
 <a href="https://www.viveport.com/" class="external-link">VIVEPORT</a>, supports all major
-headsets - including Meta Quest (via Meta Quest Link)</li>
-</ul>
-<section><h2 class="section-heading" id="how-to-publish">How to publish?<a class="anchor" aria-label="anchor" href="#how-to-publish"></a>
+headsets - including Meta Quest (via Meta Quest Link)</p>
+</section><section><h2 class="section-heading" id="how-to-publish">How to publish?<a class="anchor" aria-label="anchor" href="#how-to-publish"></a>
 </h2>
 <hr class="half-width">
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Octicons-cloud-upload.svg" style="width:30.0%" alt="upload" class="figure mx-auto d-block"><div class="figcaption">© GithHub (MIT <a href="http://opensource.org/licenses/mit-license.php" class="external-link uri">http://opensource.org/licenses/mit-license.php</a> or OFL <a href="http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web" class="external-link uri">http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web</a>),
@@ -1208,18 +1227,16 @@ libraries.</li>
 </h3>
 <p>For Meta Quest, there are two paths:</p>
 <ol style="list-style-type: decimal">
-<li><p>OculusStore: this has an extensive approval process. This
-includes doing a <a href="https://developer.oculus.com/resources/publish-quest-req/" class="external-link">technical
-review</a>.</p></li>
-<li><p>AppLab or SideQuest:</p></li>
+<li><p>Meta Store: this has an extensive approval process. This includes
+doing a <a href="https://developer.oculus.com/resources/publish-quest-req/" class="external-link">technical
+review</a>. To distribute, you can share your app via a URL, providing
+direct access to the description page, and an option to purchase or
+install the app.</p></li>
+<li><p><a href="https://sidequestvr.com/apps/applab/" class="external-link">AppLab or
+SideQuest</a>: offers an alternative path, as it an app store that
+enables you to download and experiment with apps that are not approved
+for the Oculus Quest.</p></li>
 </ol>
-<p><a href="https://developer.oculus.com/manage/" class="external-link">Meta Quest AppLab</a>
-offers an alternative path.</p>
-<p>To distribute, you can share your app via a URL, providing direct
-access to the description page, and an option to purchase or install the
-app.</p>
-<p><a href="https://sidequestvr.com/apps/applab/" class="external-link">SideQuest</a> is
-another platform for publishing apps for the Oculus Quest.</p>
 <p>Consider joining, if you are planning to make available your game
 after development.</p>
 </div>
@@ -1236,23 +1253,6 @@ with instructions for <a href="https://developer.vive.com/resources/viveport/sto
 testing</a>.</p>
 <p>In all of these systems you will need to register and, for some, pay
 a fee in order to publish.</p>
-</div>
-</section><section><h2 class="section-heading" id="interactive-systsem">Interactive Systsem<a class="anchor" aria-label="anchor" href="#interactive-systsem"></a>
-</h2>
-<hr class="half-width">
-<p>VR, as with other computer generated games is an interactive system
-which can include a wide variety of information:</p>
-<p>It usually invovles you distributing a dynamic 3D scene content
-including:</p>
-<ul>
-<li>3D models and material/textures, and effects (inc. particle
-systems)</li>
-<li>Animations.</li>
-<li>Physics simulations.</li>
-<li>Lighting effects on content.</li>
-</ul>
-<p>You will need to be aware of the computing requirements to run this
-at appropiate framerates in the user’s computer.</p>
 <div id="challenge-test-plan" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -1284,7 +1284,9 @@ bandwidth consumption.</li>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></section><section id="aio-publishing-webxr"><p>Content from <a href="publishing-webxr.html">Interoperable XR</a></p>
+ -->
+</div>
+</section></section><section id="aio-publishing-webxr"><p>Content from <a href="publishing-webxr.html">Interoperable XR</a></p>
 <hr>
 <p>Last updated on 2024-11-06 |
 
@@ -1314,7 +1316,7 @@ VR/XR applications?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Most of the time you will want your VR/XR application to seamlessly
 operate across various devices. This will avoid you having to port the
@@ -1383,6 +1385,13 @@ run on any system that exposes the OpenXR APIs. © Khronos Group
 </ul>
 <p><a href="https://www.youtube.com/watch?v=PxPIr_C5s7k" title="OpenXR" class="external-link"><img src="https://i.ytimg.com/vi/PxPIr_C5s7k/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
 <div class="section level3">
+<h3 id="godot-and-openxr">Godot and OpenXR<a class="anchor" aria-label="anchor" href="#godot-and-openxr"></a>
+</h3>
+<p>Godot provides a modular XR system that abstracts many of the
+different <a href="https://docs.godotengine.org/en/stable/tutorials/xr/setting_up_xr.html" class="external-link">XR
+platform</a> specifics away from the user.</p>
+</div>
+<div class="section level3">
 <h3 id="unity-and-openxr">Unity and OpenXR<a class="anchor" aria-label="anchor" href="#unity-and-openxr"></a>
 </h3>
 <p>Unity supports <a href="https://docs.unity3d.com/Manual/com.unity.xr.openxr.html" class="external-link">OpenXR</a>
@@ -1440,37 +1449,46 @@ different browsers.</p>
 <h3 class="callout-title">Challenge: Deploy XR examples with XR
 Viewer</h3>
 <div class="callout-content">
-<p>Using your phone or a headset, access the following examples:<a href="https://immersive-web.github.io/webxr-samples/" class="external-link">https://immersive-web.github.io/webxr-samples/</a></p>
+<p>Using your phone or a headset, access the following examples: <a href="https://immersive-web.github.io/webxr-samples/" class="external-link">https://immersive-web.github.io/webxr-samples/</a></p>
 <p>Note that you might need to install a browser which supports some of
 the functionalities as specified in <a href="https://immersiveweb.dev/#supporttable" class="external-link">here.</a></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="vr-applications-on-the-web">VR applications on the web<a class="anchor" aria-label="anchor" href="#vr-applications-on-the-web"></a>
+</section><section><h2 class="section-heading" id="libraries-and-frameworks">Libraries and Frameworks<a class="anchor" aria-label="anchor" href="#libraries-and-frameworks"></a>
 </h2>
 <hr class="half-width">
-<p>WebXR allows to build VR applications on the web, such as <a href="https://hubs.mozilla.com/" class="external-link">Mozilla Hubs</a>, which is a
-collaborative platform over the web that allows to create your own
-content.</p>
-<p>To build 3D content: <a href="https://hubs.mozilla.com/spoke" class="external-link">https://hubs.mozilla.com/spoke</a></p>
-<p>Note that Firefox has introduced also a XR-specific browser called <a href="https://www.wolvic.com/en/" class="external-link">Wolvic</a>.</p>
-<iframe src="https://5378f595f9.us2.myhubs.net/2DCtKV4?embed_token=6d0c28fadff627bc460150c6976a136c" style="width: 100%;
-height: 768px;" allow="microphone; camera; vr; speaker;">
-</iframe>
-<p>Link to Hub: <a href="https://5378f595f9.us2.myhubs.net/2DCtKV4/fair-unconscious-walkabout" class="external-link">Mozilla
-Hub</a></p>
-</section><section><h2 class="section-heading" id="other-libraries-and-frameworks">Other libraries and Frameworks<a class="anchor" aria-label="anchor" href="#other-libraries-and-frameworks"></a>
-</h2>
-<hr class="half-width">
-<p>There are other libraries and frameworks which allow to easily create
-3D content on the browser, some of which support basic VR/XR
+<p>There are various libraries and frameworks which allow to create 3D
+content on the browser, some of which support basic VR/XR
 capabilities.</p>
 <p>Some of these are specified below.</p>
-</section><section><h2 class="section-heading" id="th-wall">8th Wall<a class="anchor" aria-label="anchor" href="#th-wall"></a>
+</section><section><h2 class="section-heading" id="google-model-viewer">Google model viewer<a class="anchor" aria-label="anchor" href="#google-model-viewer"></a>
+</h2>
+<hr class="half-width">
+<p>Allows to easily display interactive 3D models on the web.</p>
+<ul>
+<li>Model Viewer: <a href="https://modelviewer.dev/examples/loading/index.html" class="external-link">https://modelviewer.dev/examples/loading/index.html</a>
+</li>
+<li>Editor: <a href="https://modelviewer.dev/editor/" class="external-link">https://modelviewer.dev/editor/</a>
+</li>
+</ul></section><section><h2 class="section-heading" id="three-js">Three.JS<a class="anchor" aria-label="anchor" href="#three-js"></a>
+</h2>
+<hr class="half-width">
+<p>Most popular 3D library to make 3D content on a webpage.</p>
+<p>It allows to use the OpenGL pipeline.</p>
+<ul>
+<li>ThreeJS: <a href="https://threejs.org/" class="external-link">https://threejs.org/</a>
+</li>
+<li>Fundamentals: <a href="https://threejs.org/manual/#en/fundamentals" class="external-link">https://threejs.org/manual/#en/fundamentals</a>
+</li>
+</ul></section><section><h2 class="section-heading" id="commercial-libraries">Commercial libraries<a class="anchor" aria-label="anchor" href="#commercial-libraries"></a>
 </h2>
 <hr class="half-width">
 <p>Commercial product built entirely using standards-compliant
 JavaScript and WebGL.</p>
+<div class="section level3">
+<h3 id="th-wall">8th Wall<a class="anchor" aria-label="anchor" href="#th-wall"></a>
+</h3>
 <p>Allows developers to deliver AR experiences over the web, using their
 own <a href="https://www.8thwall.com/products-web" class="external-link">framework</a>.</p>
 <p>See some examples of applications:</p>
@@ -1482,201 +1500,24 @@ Playful Dunks: Oreo’s Web AR Game Enabled by Face-Tracking, with Rewards
 for Top Players!</a></li>
 <li><a href="https://atmoky.8thwall.app/spatialaudio-robot/" class="external-link">atmoky
 Spatial Audio (A-Frame)</a></li>
-</ul></section><section><h2 class="section-heading" id="google-model-viewer">Google model viewer<a class="anchor" aria-label="anchor" href="#google-model-viewer"></a>
-</h2>
-<hr class="half-width">
-<p>Allows to easily display interactive 3D models on the web.</p>
-<p>Model Viewer: <a href="https://modelviewer.dev/examples/loading/index.html" class="external-link">https://modelviewer.dev/examples/loading/index.html</a>
-Editor: <a href="https://modelviewer.dev/editor/" class="external-link">https://modelviewer.dev/editor/</a></p>
-</section><section><h2 class="section-heading" id="three-js">Three.JS<a class="anchor" aria-label="anchor" href="#three-js"></a>
-</h2>
-<hr class="half-width">
-<p>Most popular 3D library to make 3D content on a webpage.</p>
-<p>It allows to use the OpenGL pipeline.</p>
-<p>ThreeJS: <a href="https://threejs.org/" class="external-link">https://threejs.org/</a>
-Fundamentals: <a href="https://threejs.org/manual/#en/fundamentals" class="external-link">https://threejs.org/manual/#en/fundamentals</a></p>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-webxr-tutorial"><p>Content from <a href="webxr-tutorial.html">WebXR Tutorial</a></p>
-<hr>
-<p>Last updated on 2024-11-06 |
-
-        <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/webxr-tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<hr>
-<p><strong>Aim:</strong></p>
-<p>The aim of this tutorial is to learn to implement a basic
-interoperable web-based 3D environment using WebGL.</p>
-<p>WebGL (Web Graphics Library) is a JavaScript API for rendering
-interactive 2D and 3D graphics within any compatible web browser without
-the use of plug-ins.</p>
-<p>WebGL is fully integrated with other web standards, allowing
-GPU-accelerated usage of physics and image processing and effects as
-part of the web page canvas. It uses the HTML5 canvas element.</p>
-<p>In this tutorial, you will follow a few steps to implement 3D
-environments, including support for Virtual Reality (VR), on the
-web.</p>
-<p><strong>Requirements:</strong></p>
-<p>You will need basic awareness of how a webserver works, as well as
-basic knowledge of HTML and Javascript.</p>
-<p>You can use Three.JS (<a href="https://threejs.org/" class="external-link uri">https://threejs.org/</a>) or AFrame (<a href="https://aframe.io/" class="external-link uri">https://aframe.io/</a>) for your
-application, although we’ll do an example using mostly THREE.JS.</p>
-<hr>
-<section><h2 class="section-heading" id="step-1--create-a-website">Step 1. Create a website<a class="anchor" aria-label="anchor" href="#step-1--create-a-website"></a>
-</h2>
-<hr class="half-width">
-<p>Using the basic <a href="tutorial.html#create-a-basic-web-server-image-in-docker">instructions
-to create a website</a>, generate basic code to run a sample
-webpage.</p>
-<p>Through this, you will be able to test your own html example, such as
-<a href="https://vrtest.kre.brighton.domains" class="external-link">this example</a> following
-the next steps:</p>
-<iframe src="https://vrtest.kre.brighton.domains" style="width: 100%;
-height: 768px;"></iframe>
-</section><section><h2 class="section-heading" id="step-2--install-node-js-in-your-pc">Step 2. Install Node.JS in your PC<a class="anchor" aria-label="anchor" href="#step-2--install-node-js-in-your-pc"></a>
-</h2>
-<hr class="half-width">
-<p>Download an install <a href="https://nodejs.org/en/download" class="external-link">NodeJS</a></p>
-<p>Node.JS uses a <a href="https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager" class="external-link">standard
-package manager</a> which is called with the command npm.</p>
-<p>To install a single package, you need to type in the console:</p>
-<pre class="console"><code>npm install &lt;package-name&gt;
-</code></pre>
-<p>You can use an existing boiler plate Three.JS code which has been
-configured for Node.JS to understand how it works and modify according
-to your needs, for example</p>
-<p><a href="https://github.com/Sean-Bradley/Threejs-Boilerplate" class="external-link">GitHub
-- Sean-Bradley/Threejs-Boilerplate</a></p>
-<p>Create a folder which you will access from an IDE, such as Visual
-Studio Code. Then clone this code from the github repository by typing
-in the console:</p>
-<pre class="console"><code>git clone https://github.com/Sean-Bradley/Threejs-Boilerplate.git
-</code></pre>
-<p>Once you download the code, you can use npm to install and start:</p>
-<pre class="console"><code>$ cd Threejs-Boilerplate
-$ npm install
-$ npm start</code></pre>
-<p>npm start runs a predefined command specified in the “start” property
-of a package’s “scripts” object.</p>
-<p>It normally creates a local webserver, e.g. <a href="http://127.0.0.1:3000" class="external-link uri">http://127.0.0.1:3000</a> where
-the website is located.</p>
-<p>Once you run this code, you should see the default example.</p>
-<figure><img src="fig/threejs.png" alt="three.js basic ex" class="figure mx-auto d-block"><div class="figcaption">Browser running localhost webserver with threejs
-boilerplate code</div>
-</figure></section><section><h2 class="section-heading" id="step-3-modify-your-code-to-run-a-vr-example">Step 3.Modify your code to run a VR example<a class="anchor" aria-label="anchor" href="#step-3-modify-your-code-to-run-a-vr-example"></a>
-</h2>
-<hr class="half-width">
-<p>Using the VR examples in Three.JS: <a href="https://threejs.org/examples/" class="external-link uri">https://threejs.org/examples/</a> find a VR example which
-you want to work with, such as:</p>
-<p><a href="https://threejs.org/examples/?q=vr#webxr_vr_cubes" class="external-link uri">https://threejs.org/examples/?q=vr#webxr_vr_cubes</a> and
-look at the code:</p>
-<p><a href="https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html" class="external-link uri">https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html</a></p>
-You can copy the code within the
-<script>
-<p>tag and include it in your client.js file. When running the example
-using $npm start you should see the new example running:</p>
-<div class="float">
-<img src="fig/cubes.png" alt="three.js basic ex" />
-<div class="figcaption">Browser running localhost webserver with
-three.js cubes example</div>
+</ul>
 </div>
-<div id="step-4.-examine-the-code" class="section level3">
-<h3>Step 4. Examine the code</h3>
-<p>Examine the code and make any modification you want to implement
-before deploying on the server.</p>
-<p>This can include changing the type of geometry, the number or the
-material you use:</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="kw">const</span> geometry  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">BoxGeometry</span> (  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span> <span class="op">,</span>  <span class="fl">0.15</span>  )<span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>  <span class="cf">for</span>  (  <span class="kw">let</span>   i  <span class="op">=</span>  <span class="dv">0</span> <span class="op">;</span>  i  <span class="op">&lt;</span>  <span class="dv">200</span> <span class="op">;</span>  i  <span class="op">++</span> ) {</span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>  <span class="kw">const</span>   object  <span class="op">=</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">Mesh</span> (  geometry <span class="op">,</span>  <span class="kw">new</span>   THREE <span class="op">.</span> <span class="fu">MeshLambertMaterial</span> ( {  <span class="dt">color</span> <span class="op">:</span>   <span class="bu">Math</span> <span class="op">.</span> <span class="fu">random</span> () <span class="op">*</span>  <span class="bn">0xffffff</span>  } ) )<span class="op">;</span></span>
-<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a></span></code></pre></div>
-</div>
-<div id="step-5.-upload-your-code-to-the-webserver"
-class="section level3">
-<h3>Step 5. Upload your code to the webserver</h3>
-<p>To deploy your code, you will need to copy/paste your code to the
-brighton.domains server. For this, you can upload evert file or use scp
-on the command line so that the content is copied recursively.</p>
-<p>Now, in the brighton.domains dashboard look for the Node.JS
-functionality and create a new application with the content on the
-folder.</p>
-<div class="float">
-<img src="fig/nodejs" alt="three.js basic ex" />
-<div class="figcaption">Brighton domains NodeJS interface</div>
-</div>
-<p>After the application starts, you should be able to test it using a
-cardboard VR or headset through the http address.</p>
-<!--
-
-
-
-
-This will run the Node.JS application and you can see the site by opening your browser and going to: http://127.0.0.1:3000
-
-You should see the default example:
-
-Exercise 3. Modify your code to run a VR example
-
-Using the VR examples in Three.JS: https://threejs.org/examples/ find a VR example which you want to work with, such as:
-
-https://threejs.org/examples/?q=vr#webxr_vr_cubes and look at the code: https://github.com/mrdoob/three.js/blob/master/examples/webxr_vr_cubes.html
-
-You can copy the code within the <script> tag and include it in your client.js file. When running the example using $npm start you should see the new example running:
-
-
-Exercise 4. Examine the code
-
-Examine the code and make any modification you want to implement before deploying on the server. This can include changing the type of geometry, the number or the material you use:
-
-
-
-``` javascript
-
-  const geometry  =  new   THREE . BoxGeometry (  0.15 ,  0.15 ,  0.15  );
-
-
-  for  (  let   i  =  0 ;  i  <  200 ;  i  ++ ) {
-
-
-  const   object  =  new   THREE . Mesh (  geometry ,  new   THREE . MeshLambertMaterial ( {  color :   Math . random () *  0xffffff  } ) );
-
-
-```
-
-
-
-
-Excercise 5. Upload your code to the webserver
-
-To deploy your code, you will need to copy/paste your code to the brighton.domains server. For this, you can use scp on the command line so that the content is copied recursively.
-
-
-
-
-Now, in the brighton.domains dashboard look for the Node.JS functionality and create a new application with the content  on the folder.
-
-
-
- 
-
-After the application starts, you should be able to test it using a cardboard VR or headset through the http address.
--->
+<div class="section level3">
+<h3 id="blipar">BlipAR<a class="anchor" aria-label="anchor" href="#blipar"></a>
+</h3>
+<p>Blippbuilder <a href="https://www.blippar.com/build-ar" class="external-link">framework</a>
+uses simple drag-and-drop interface to upload content and create AR
+experiences.</p>
+<ul>
+<li><a href="https://www.blippar.com/ar-creations/fanta" class="external-link">Augmented
+Reality roadtrip across Australia</a></li>
+</ul>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</div></script></section></section>
+</section></section>
 </div>
     </main>
 </div>
