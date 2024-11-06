@@ -1,5 +1,5 @@
 ---
-title: 'Distribution 6 DoF Experiences'
+title: 'publishing interactive VR'
 teaching: 10
 exercises: 2
 ---
@@ -88,9 +88,8 @@ computing requirements to run this at appropiate framerates in
 the user's computer.
 
 
-[![IMAGE ALT TEXT](https://i.ytimg.com/vi/NSzje6I3BZA/maxresdefault.jpg)](https://www.youtube.com/watch?v=NSzje6I3BZA "Framerate")
 
-## Recomendations for publishing interactive VR
+
 
 
 :::::: challenge
