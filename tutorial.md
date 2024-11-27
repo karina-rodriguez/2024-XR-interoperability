@@ -18,17 +18,42 @@ You will need basic awareness of how a webserver works, as well
 as basic knowledge of HTML and Javascript.
 
 ---
-# 360 Stereo images 
+# Using online viewers
 
+Using a 360 camera, take a 360 image.
 Here is the image we took during class is available here.
 
 ![Non-Stereo 360 image.](fig/2024_class_360.JPG){alt='Class 360 image.'}
 
-![Stereo 360 image.](fig/2024_class_360_stereo.JPG){alt='Class 360 image.'}
+
+<iframe width="800" height="600" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//karina-rodriguez.github.io/2024-XR-interoperability/fig/2024_class_360.JPG&title=Class%202024%20VR%20Systems%20UoB&autoLoad=true"></iframe>
+
+
+You will need to download them onto the computer, process them and publish the result to be viewed in different formats. 
+
+Once you have your spherical panorama stitched files make it available via a URL using https://brighton.domains/ or [Wikimedia](https://commons.wikimedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page) (you need to create an account).
+
+Once the file is uploaded get the URL link of the image and past it into the first box of [Pannellum viewer](https://pannellum.org/documentation/overview/tutorial/).
+
+Congratulations you are viewing your first spherical panorama photograph online!
+
+Get the URL link of the result of the embedding code and paste it into one of your social media or personal pages if you want to.
 
 
 
-# 360 Non-stereo images on server
+There are many interactive viewers for spherical panorama photographs some more basic while others more advanced.[The Pannellum viewer](https://pannellum.org) is a good starting point because it is open source and customisable. With Pannellum and other viewers, it will also be possible to create Virtual tours, however, it is out of the scope of this exercise to learn how to create this type of visualisation. If you want to further explore this type of publication here is a list of tools that you may be able to use for your project:
+
+
+
+- Pannellum [Online](https://pannellum.org/documentation/overview/tutorial/) or [self- hosted](https://pannellum.org/download/).
+- [Google Streetview](https://www.google.com/streetview/) 
+- [Marzipano](https://www.marzipano.net/)
+- [Asteroom](https://www.asteroom.com/en/photographers)
+- [Matterport](https://matterport.com/en-gb).
+
+
+
+# 360 on server
 ## Create a basic web server image in Docker
 
 
