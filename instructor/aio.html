@@ -385,7 +385,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -476,7 +476,7 @@ user,</li>
 <p>For each of these variations, user can access experiences through a
 variety of channels.</p></section><section id="aio-immersive-vs-panoramic"><p>Content from <a href="immersive-vs-panoramic.html">Types of content in XR experiences</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/immersive-vs-panoramic.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -617,7 +617,7 @@ University Libraries Washington. <a href="https://content.lib.washington.edu/pan
 </ol>
 </div></section><section id="aio-degrees-of-freedom"><p>Content from <a href="degrees-of-freedom.html">Degrees of Freedom</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/degrees-of-freedom.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -693,7 +693,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-distribution-3dof"><p>Content from <a href="distribution-3dof.html">Distributing 3DoF Experiences</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/distribution-3dof.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -805,7 +805,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-tutorial"><p>Content from <a href="tutorial.html">3DOF Tutorial</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -820,9 +820,19 @@ which allows a user to visualise and interact with a 360° image.</p>
 <p>You will need basic awareness of how a webserver works, as well as
 basic knowledge of HTML and Javascript.</p>
 <hr>
-<section><h2 class="section-heading" id="create-a-basic-web-server-image-in-docker">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a>
+<div class="section level1">
+<h1 id="stereo-images">360 Stereo images<a class="anchor" aria-label="anchor" href="#stereo-images"></a>
+</h1>
+<p>Here is the image we took during class is available here.</p>
+<figure><img src="../fig/2024_class_360.JPG" alt="Class 360 image." class="figure mx-auto d-block"><div class="figcaption">Stereo 360 image.</div>
+</figure>
+</div>
+<div class="section level1">
+<h1 id="non-stereo-images-on-server">360 Non-stereo images on server<a class="anchor" aria-label="anchor" href="#non-stereo-images-on-server"></a>
+</h1>
+<div class="section level2">
+<h2 id="create-a-basic-web-server-image-in-docker">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a>
 </h2>
-<hr class="half-width">
 <p>For this exercise, you can either use:</p>
 <ul>
 <li>web server in <a href="https://brighton.domains/" class="external-link">brighton.domains</a>
@@ -852,9 +862,10 @@ list of images</p>
 REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
 karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="start-the-web-server-container">Start the web server container<a class="anchor" aria-label="anchor" href="#start-the-web-server-container"></a>
+</div>
+<div class="section level2">
+<h2 id="start-the-web-server-container">Start the web server container<a class="anchor" aria-label="anchor" href="#start-the-web-server-container"></a>
 </h2>
-<hr class="half-width">
 <p>To start the new server</p>
 <p>Either start the image in Docker Desktop.</p>
 <figure><img src="../fig/start.png" alt="Start my-own-apache2." class="figure mx-auto d-block"><div class="figcaption">Start in DockerDesktop the image
@@ -868,9 +879,10 @@ list of images</p>
 <pre class="console"><code>foo@bar:~$ docker container ls
 CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS         PORTS                    NAMES
 ec432b277b4c   karinardz/my-own-apache2           "httpd-foreground"       9 seconds ago   Up 8 seconds   0.0.0.0:8080-&gt;80/tcp     my-own-webserver</code></pre>
-</section><section><h2 class="section-heading" id="run-the-website-on-a-browser">Run the website on a browser<a class="anchor" aria-label="anchor" href="#run-the-website-on-a-browser"></a>
+</div>
+<div class="section level2">
+<h2 id="run-the-website-on-a-browser">Run the website on a browser<a class="anchor" aria-label="anchor" href="#run-the-website-on-a-browser"></a>
 </h2>
-<hr class="half-width">
 <p>The container has a basic apache httpd web server installed.</p>
 <p>To test this, you can access on a web browser the following
 address:</p>
@@ -880,9 +892,11 @@ javascript which uses the <a href="https://developers.google.com/vr/develop/web/
 for the Web</a>.</p>
 <figure><img src="../fig/localhost.png" alt="Local host with 360 image." class="figure mx-auto d-block"><div class="figcaption">Load localhost on webserver will visualise the
 360 image.</div>
-</figure></section><section><h2 class="section-heading" id="modify-the-htmljavascript-code-to-add-interaction">Modify the HTML/JavaScript code to add interaction<a class="anchor" aria-label="anchor" href="#modify-the-htmljavascript-code-to-add-interaction"></a>
+</figure>
+</div>
+<div class="section level2">
+<h2 id="modify-the-htmljavascript-code-to-add-interaction">Modify the HTML/JavaScript code to add interaction<a class="anchor" aria-label="anchor" href="#modify-the-htmljavascript-code-to-add-interaction"></a>
 </h2>
-<hr class="half-width">
 <p>Docker Desktop can be used to access the files which are used for the
 website. To access this, navigate to: Containers -&gt;
 my-own-webserver</p>
@@ -1049,9 +1063,10 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</section></section><section id="aio-display-technologies-for-6dof-experiences"><p>Content from <a href="display-technologies-for-6dof-experiences.html">Display technologies for 6DoF Experiences</a></p>
+</div>
+</div></section><section id="aio-display-technologies-for-6dof-experiences"><p>Content from <a href="display-technologies-for-6dof-experiences.html">Display technologies for 6DoF Experiences</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/display-technologies-for-6dof-experiences.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1186,7 +1201,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-distribution-of-vr"><p>Content from <a href="distribution-of-vr.html">Distributing 6DoF experiences</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/distribution-of-vr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1309,7 +1324,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-publishing-webxr"><p>Content from <a href="publishing-webxr.html">Interoperable XR</a></p>
 <hr>
-<p>Last updated on 2024-11-26 |
+<p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/publishing-webxr.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1338,7 +1353,7 @@ VR/XR applications?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Most of the time you will want your VR/XR application to seamlessly
 operate across various devices. This will avoid you having to port the
@@ -1587,8 +1602,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2024-xr-interoperability/instructor/aio.html",
   "identifier": "https://karina-rodriguez.github.io/2024-xr-interoperability/instructor/aio.html",
   "dateCreated": "2024-11-04",
-  "dateModified": "2024-11-26",
-  "datePublished": "2024-11-26"
+  "dateModified": "2024-11-27",
+  "datePublished": "2024-11-27"
 }
 
   </script><script>

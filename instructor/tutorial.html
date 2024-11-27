@@ -232,22 +232,12 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         5. 3DOF Tutorial
         </span>
-      </button>
+      
     </div><!--/div.accordion-header-->
-
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#create-a-basic-web-server-image-in-docker">Create a basic web server image in Docker</a></li>
-<li><a href="#start-the-web-server-container">Start the web server container</a></li>
-<li><a href="#run-the-website-on-a-browser">Run the website on a browser</a></li>
-<li><a href="#modify-the-htmljavascript-code-to-add-interaction">Modify the HTML/JavaScript code to add interaction</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -337,7 +327,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>3DOF Tutorial</h1>
-        <p>Last updated on 2024-11-26 |
+        <p>Last updated on 2024-11-27 |
 
         <a href="https://github.com/karina-rodriguez/2024-xr-interoperability/edit/main/episodes/tutorial.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -357,8 +347,16 @@ which allows a user to visualise and interact with a 360° image.</p>
 <p><strong>Requirements:</strong></p>
 <p>You will need basic awareness of how a webserver works, as well as
 basic knowledge of HTML and Javascript.</p>
-<hr><section><h2 class="section-heading" id="create-a-basic-web-server-image-in-docker">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a></h2>
-<hr class="half-width"><p>For this exercise, you can either use:</p>
+<hr><div class="section level1">
+<h1 id="stereo-images">360 Stereo images<a class="anchor" aria-label="anchor" href="#stereo-images"></a></h1>
+<p>Here is the image we took during class is available here.</p>
+<figure><img src="../fig/2024_class_360.JPG" alt="Class 360 image." class="figure mx-auto d-block"><div class="figcaption">Stereo 360 image.</div>
+</figure></div>
+<div class="section level1">
+<h1 id="non-stereo-images-on-server">360 Non-stereo images on server<a class="anchor" aria-label="anchor" href="#non-stereo-images-on-server"></a></h1>
+<div class="section level2">
+<h2 id="create-a-basic-web-server-image-in-docker">Create a basic web server image in Docker<a class="anchor" aria-label="anchor" href="#create-a-basic-web-server-image-in-docker"></a></h2>
+<p>For this exercise, you can either use:</p>
 <ul><li>web server in <a href="https://brighton.domains/" class="external-link">brighton.domains</a>
 </li>
 <li>Docker container with a web server.</li>
@@ -383,8 +381,10 @@ list of images</p>
 REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
 karinardz/my-own-apache2           latest    38e2bbc9b07c   46 minutes ago   254MB</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="start-the-web-server-container">Start the web server container<a class="anchor" aria-label="anchor" href="#start-the-web-server-container"></a></h2>
-<hr class="half-width"><p>To start the new server</p>
+</div>
+<div class="section level2">
+<h2 id="start-the-web-server-container">Start the web server container<a class="anchor" aria-label="anchor" href="#start-the-web-server-container"></a></h2>
+<p>To start the new server</p>
 <p>Either start the image in Docker Desktop.</p>
 <figure><img src="../fig/start.png" alt="Start my-own-apache2." class="figure mx-auto d-block"><div class="figcaption">Start in DockerDesktop the image
 karinardz/my-own-apache2</div>
@@ -397,8 +397,10 @@ list of images</p>
 <pre class="console"><code>foo@bar:~$ docker container ls
 CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS         PORTS                    NAMES
 ec432b277b4c   karinardz/my-own-apache2           "httpd-foreground"       9 seconds ago   Up 8 seconds   0.0.0.0:8080-&gt;80/tcp     my-own-webserver</code></pre>
-</section><section><h2 class="section-heading" id="run-the-website-on-a-browser">Run the website on a browser<a class="anchor" aria-label="anchor" href="#run-the-website-on-a-browser"></a></h2>
-<hr class="half-width"><p>The container has a basic apache httpd web server installed.</p>
+</div>
+<div class="section level2">
+<h2 id="run-the-website-on-a-browser">Run the website on a browser<a class="anchor" aria-label="anchor" href="#run-the-website-on-a-browser"></a></h2>
+<p>The container has a basic apache httpd web server installed.</p>
 <p>To test this, you can access on a web browser the following
 address:</p>
 <p><a href="http://localhost:8080" class="external-link">http://localhost:8080</a></p>
@@ -407,8 +409,10 @@ javascript which uses the <a href="https://developers.google.com/vr/develop/web/
 for the Web</a>.</p>
 <figure><img src="../fig/localhost.png" alt="Local host with 360 image." class="figure mx-auto d-block"><div class="figcaption">Load localhost on webserver will visualise the
 360 image.</div>
-</figure></section><section><h2 class="section-heading" id="modify-the-htmljavascript-code-to-add-interaction">Modify the HTML/JavaScript code to add interaction<a class="anchor" aria-label="anchor" href="#modify-the-htmljavascript-code-to-add-interaction"></a></h2>
-<hr class="half-width"><p>Docker Desktop can be used to access the files which are used for the
+</figure></div>
+<div class="section level2">
+<h2 id="modify-the-htmljavascript-code-to-add-interaction">Modify the HTML/JavaScript code to add interaction<a class="anchor" aria-label="anchor" href="#modify-the-htmljavascript-code-to-add-interaction"></a></h2>
+<p>Docker Desktop can be used to access the files which are used for the
 website. To access this, navigate to: Containers -&gt;
 my-own-webserver</p>
 <p>You should be able to access the interface with the various tabs:
@@ -573,7 +577,12 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</section></div> <!-- / div.lesson-content -->
+</div>
+</div>
+
+
+
+      </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/distribution-3dof.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/display-technologies-for-6dof-experiences.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -631,8 +640,8 @@ any links that you are not going to use.
   "url": "https://karina-rodriguez.github.io/2024-xr-interoperability/instructor/tutorial.html",
   "identifier": "https://karina-rodriguez.github.io/2024-xr-interoperability/instructor/tutorial.html",
   "dateCreated": "2024-11-04",
-  "dateModified": "2024-11-26",
-  "datePublished": "2024-11-26"
+  "dateModified": "2024-11-27",
+  "datePublished": "2024-11-27"
 }
 
   </script><script>
