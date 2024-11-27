@@ -18,8 +18,15 @@ You will need basic awareness of how a webserver works, as well
 as basic knowledge of HTML and Javascript.
 
 ---
+# 360 Stereo images 
+
+Here is the image we took during class is available here.
+
+![Stereo 360 image.](fig/2024_class_360.JPG){alt='Class 360 image.'}
 
 
+
+# 360 Non-stereo images on server
 ## Create a basic web server image in Docker
 
 
