@@ -22,7 +22,9 @@ as basic knowledge of HTML and Javascript.
 
 Here is the image we took during class is available here.
 
-![Stereo 360 image.](fig/2024_class_360.JPG){alt='Class 360 image.'}
+![Non-Stereo 360 image.](fig/2024_class_360.JPG){alt='Class 360 image.'}
+
+![Stereo 360 image.](fig/2024_class_360_stereo.JPG){alt='Class 360 image.'}
 
 
 
